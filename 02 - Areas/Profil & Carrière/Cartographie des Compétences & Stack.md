@@ -30,4 +30,5 @@ tags:
 
 ## 🔗 Liens
 - [[02 - Areas/Profil & Carrière/Profil & Parcours — Émilie Jiang|Retour au profil]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Consulter les 10 fiches techniques de stage]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Consulter les 10 fiches techniques de stage OnePoint]]
+- [[01 - Projects/Stage Recherche - Zhejiang University/Index du Stage Recherche ZJU|Consulter les 3 fiches techniques de recherche ZJU (LIULAB)]]

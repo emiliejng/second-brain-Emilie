@@ -27,14 +27,20 @@ tags:
 
 ## 🧪 2. Université du Zhejiang — LIULAB (04/2025 – 08/2025 · 4 mois)
 **Rôle :** Stagiaire Chercheuse en IA Moléculaire & Chimie Computationnelle  
-**Lieu :** Hangzhou, Zhejiang, Chine  
+**Lieu :** ZJU-Hangzhou Global Scientific and Technological Innovation Center, Hangzhou, Chine  
+**Encadrement :** Prof. Ming Liu (LIULAB), Xiao Xiao (Superviseur académique), Siyuan Yang (Mentor direct)  
 **Recherche & Réalisations :**
-- Développement et optimisation d'un modèle hybride **DimeNet++ + Transformer** pour la prédiction précise de propriétés moléculaires complexes.
-- Évaluation sur le benchmark de référence **QM9** (base de 133 000 molécules organiques), amélioration des métriques de régression (MAE et RMSE).
-- Conception et implémentation du pipeline de pré-entraînement auto-supervisé par **Masked Atom Prediction (MAP)**.
-- Gestion d'expérimentations GPU à grande échelle sur cluster de calcul haute performance via **SLURM**.
-- Analyse des représentations latentes par réduction dimensionnelle et visualisation **t-SNE**.
-- **Stack :** Python, PyTorch, PyTorch Geometric (PyG), RDKit, SLURM, Linux HPC.
+- **Contexte :** Modélisation IA au service de la fusion nucléaire (ITER) et de la séparation des isotopes de l'hydrogène (H, D, T) par cages organiques poreuses (*Science* 2019).
+- **Modèle Hybride :** Conception et benchmark d'une architecture couplant **DimeNet++** (*Directional Message Passing* basé sur bases de Bessel et harmoniques sphériques) et **Transformer** (attention globale $O(N^2)$) avec encodages positionnels pour capter à la fois la géométrie 3D locale et les corrélations à longue distance.
+- **Benchmark QM9 :** Évaluation sur 133 886 molécules organiques, surclassement du baseline sur les propriétés à longue portée (MAE et RMSE).
+- **Auto-supervision (MAP) :** Conception d'un pipeline de pré-entraînement par masquage d'atomes (15 % masquage : 80/10/10) inspiré de MCRT (*Chemical Science* 2025).
+- **HPC & SLURM :** Déploiement et gestion conjointe de 10 pipelines parallèles sur cluster multi-GPU partagé, résolution des OOM par *gradient checkpointing* et format de batch dense masqué.
+- **Espace Latent :** Réduction dimensionnelle et projection **t-SNE** confirmant l'émergence spontanée de clusters chimiques cohérents.
+- **Stack :** Python, PyTorch, PyTorch Geometric (PyG), RDKit, SLURM, Linux HPC, Scikit-Learn (t-SNE), Matplotlib.
+- **Documentation complète :** [[01 - Projects/Stage Recherche - Zhejiang University/Index du Stage Recherche ZJU|Consulter le hub de recherche ZJU]]  
+  - [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU01 - Modele Hybride DimeNet++ Transformer & QM9|FT-ZJU01 — Architecture Hybride DimeNet++ + Transformer & Benchmark QM9]]  
+  - [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU02 - Pre-entrainement Auto-Supervise Masked Atom Prediction (MAP)|FT-ZJU02 — Pré-entraînement Auto-Supervisé (MAP) & Analyse t-SNE]]  
+  - [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU03 - Orchestration HPC & Calcul Distribue Multi-GPU avec SLURM|FT-ZJU03 — Orchestration HPC & Multi-GPU sous SLURM]]
 
 ---
 

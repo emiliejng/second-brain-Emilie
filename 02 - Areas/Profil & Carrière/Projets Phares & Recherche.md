@@ -11,9 +11,26 @@ tags:
 
 # 🚀 Projets Phares & Travaux de Recherche — Émilie Jiang
 
+## 🧪 1. IA Moléculaire & GNNs — LIULAB Zhejiang University (2025)
+> **Mots-clés :** *Graph Neural Networks (GNNs), DimeNet++, Transformers, Auto-Attention Globale, Masked Atom Prediction (MAP), Benchmark QM9, HPC SLURM, Fusion Nucléaire.*
+
+- **Vision :** Accélérer la découverte de matériaux et cages poreuses pour la séparation des isotopes d'hydrogène (H, D, T) au service de l'énergie de fusion nucléaire propre (ITER), inspiré des travaux de Liu et al. (*Science* 2019).
+- **Architecture Hybride Développée :**
+  - Fusion d'un encodeur spatial 3D **DimeNet++** (passage de messages directionnel basé sur bases de Bessel et harmoniques sphériques) et d'un encodeur **Transformer** avec encodages positionnels pour capturer simultanément la géométrie locale 3D et les interactions stériques/électroniques à longue portée ($O(N^2)$).
+  - Validation sur le benchmark de référence **QM9** (133 886 molécules organiques).
+- **Pré-entraînement Auto-Supervisé (MAP) :**
+  - Protocole de masquage probabiliste (15 % masquage : 80/10/10) inspiré de MCRT (*Chemical Science* 2025) pour apprendre des représentations latentes transférables sans dépendance aux calculs DFT coûteux.
+  - Projection et analyse de l'espace latent par réduction dimensionnelle **t-SNE**.
+- **Calcul Distribué Haute Performance :**
+  - Déploiement de 10 pipelines expérimentaux sous ordonnanceur **SLURM** sur supercalculateur GPU, gestion d'erreurs OOM via gradient checkpointing et apprentissage déterministe multi-seeds.
+- **Documentation complète :** [[01 - Projects/Stage Recherche - Zhejiang University/Index du Stage Recherche ZJU|Consulter le hub de recherche ZJU]]  
+  - [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU01 - Modele Hybride DimeNet++ Transformer & QM9|FT-ZJU01 — Architecture Hybride DimeNet++ + Transformer & Benchmark QM9]]  
+  - [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU02 - Pre-entrainement Auto-Supervise Masked Atom Prediction (MAP)|FT-ZJU02 — Pré-entraînement Auto-Supervisé (MAP) & Analyse t-SNE]]  
+  - [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU03 - Orchestration HPC & Calcul Distribue Multi-GPU avec SLURM|FT-ZJU03 — Orchestration HPC & Multi-GPU sous SLURM]]
+
 ---
 
-## 🤖 1. Sealy — Robot Compagnon IA pour la Productivité (2025 – 2026)
+## 🤖 2. Sealy — Robot Compagnon IA pour la Productivité (2025 – 2026)
 > **Mots-clés :** *Fatigue detection, Vigilance, Facteurs humains, Charge cognitive, Vision par ordinateur, Prototypage physique.*
 
 - **Vision :** Conception d'un robot de bureau compagnon autonome dédié au bien-être et à la concentration au travail.
@@ -29,7 +46,7 @@ tags:
 
 ---
 
-## ⚡ 2. Deep Learning — MNIST from Scratch : TinyGrad ➔ WebGPU (2025)
+## ⚡ 3. Deep Learning — MNIST from Scratch : TinyGrad ➔ WebGPU (2025)
 > **Mots-clés :** *Deep learning from scratch, TinyGrad, WebGPU, Inférence edge dans le navigateur, Visualisation temps réel.*
 
 - **Objectif :** Maîtriser les fondations algorithmiques du Deep Learning sans dépendre des couches d'abstraction lourdes (framework minimaliste **TinyGrad** développé par George Hotz).
@@ -42,7 +59,7 @@ tags:
 
 ---
 
-## 📦 3. Quickstarter — Campagne & Produit Kickstarter (2024 – 2025)
+## 📦 4. Quickstarter — Campagne & Produit Kickstarter (2024 – 2025)
 > **Mots-clés :** *Product management, Design direction, Recherche utilisateur, Financement participatif.*
 
 - Lancement et gestion d'une campagne de financement participatif sur la plateforme **Kickstarter**.
@@ -51,7 +68,7 @@ tags:
 
 ---
 
-## 📡 4. Arduino / ESP32 + Dashboard WebSocket Temps Réel (2024)
+## 📡 5. Arduino / ESP32 + Dashboard WebSocket Temps Réel (2024)
 > **Mots-clés :** *IoT, Systèmes embarqués, WebSockets, Télémesure temps réel.*
 
 - Architecture d'un banc de mesure IoT reliant un microcontrôleur **ESP32 / Arduino** à un dashboard web moderne (HTML5 / CSS3 / JavaScript).

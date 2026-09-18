@@ -42,6 +42,18 @@ Bienvenue dans ton **Second Brain** personnel sur Obsidian ! Ce coffre centralis
 
 ---
 
+## 🧪 Recherche Fondamentale & Deep Learning — Zhejiang University (LIULAB)
+
+> **Projet de Recherche A4 :** [[01 - Projects/Stage Recherche - Zhejiang University/Index du Stage Recherche ZJU|⚛️ Stage de Recherche — IA Moléculaire & Chimie Computationnelle (LIULAB / ZJU)]]  
+> Modélisation de cages poreuses pour la séparation isotopique de l'hydrogène (fusion nucléaire / ITER) via couplage de Graph Neural Networks et Transformers.
+
+### 📋 3 Fiches Techniques de Recherche (Rigueur Scientifique & HPC)
+- [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU01 - Modele Hybride DimeNet++ Transformer & QM9|FT-ZJU01 — Architecture Hybride DimeNet++ + Transformer & Benchmark QM9 (133 886 molécules)]]
+- [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU02 - Pre-entrainement Auto-Supervise Masked Atom Prediction (MAP)|FT-ZJU02 — Pré-entraînement Auto-Supervisé (MAP) & Analyse Latente t-SNE]]
+- [[01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques/FT-ZJU03 - Orchestration HPC & Calcul Distribue Multi-GPU avec SLURM|FT-ZJU03 — Orchestration HPC & Calcul Distribué Multi-GPU sous SLURM]]
+
+---
+
 ## ⚡ Navigation Méthode P.A.R.A.
 
 | Dossier | Description | Statut |
