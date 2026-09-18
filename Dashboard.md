@@ -1,6 +1,9 @@
 # 🧠 Second Brain — Émilie Jiang
 
-Bienvenue dans ton **Second Brain** personnel sur Obsidian ! Ce coffre centralise ton profil d'ingénieure, tes compétences de pointe en IA, tes projets de recherche et le catalogue de tes réalisations chez **Onepoint AI Lab**.
+Bienvenue dans ton **Second Brain** personnel sur Obsidian, architecturé selon le **LLM Wiki Pattern** d'Andrej Karpathy ! Ce coffre centralise ton profil d'ingénieure, tes compétences de pointe en IA, tes projets de recherche et le catalogue de tes réalisations chez **Onepoint AI Lab** et à l'**Université du Zhejiang (LIULAB)**.
+
+> 🏛️ **Infrastructure LLM Wiki Active :**  
+> [[CLAUDE.md|⚙️ CLAUDE.md (Schéma)]] · [[wiki/index|📋 Index du Wiki (Catalogue)]] · [[wiki/log|📜 Operations Log]] · [[wiki/concepts/Pattern LLM Wiki (Andrej Karpathy)|💡 Concept LLM Wiki]] · [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ Atlas du Graphe]]
 
 ---
 

@@ -8,6 +8,27 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
+      "query": "path:\"wiki/sources\"",
+      "color": {
+        "a": 1,
+        "rgb": 16020150
+      }
+    },
+    {
+      "query": "path:\"wiki/entities\"",
+      "color": {
+        "a": 1,
+        "rgb": 16744448
+      }
+    },
+    {
+      "query": "path:\"wiki/concepts\"",
+      "color": {
+        "a": 1,
+        "rgb": 1096065
+      }
+    },
+    {
       "query": "path:\"01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques\"",
       "color": {
         "a": 1,
@@ -50,17 +71,10 @@
       }
     },
     {
-      "query": "path:\"_Templates\"",
+      "query": "path:\"raw\"",
       "color": {
         "a": 1,
         "rgb": 6583435
-      }
-    },
-    {
-      "query": "path:\"00 - Inbox\"",
-      "color": {
-        "a": 1,
-        "rgb": 16020150
       }
     }
   ],

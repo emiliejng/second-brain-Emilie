@@ -14,3 +14,10 @@ Icon
 *.tmp
 *.bak
 *~
+
+# Large binaries (prevent exceeding GitHub 100MB file limit)
+*.pptx
+*.mp4
+*.mov
+*.zip
+*.tar.gz
