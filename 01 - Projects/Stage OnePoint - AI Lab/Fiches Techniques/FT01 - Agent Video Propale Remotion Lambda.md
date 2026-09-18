@@ -18,7 +18,6 @@ tags:
 
 # 🎬 Fiche Technique 01 : Agent Vidéo de la Propale (ScriptWriter / Ellis)
 
-> **Référence Deck Marketing :** Diapositive 55 (*ScriptWriter : la production audiovisuelle qui passe de plusieurs semaines à quelques minutes*) & Diapositive 30/35 (*Software : fal.ai, Remotion, ElevenLabs*).  
 > **Accès Déployé :** `https://ellis-tau.vercel.app` (Section *Agents de vente*).
 
 ---
