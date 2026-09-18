@@ -5,7 +5,7 @@ categorie: Interactive Showroom & Frontend Architecture
 entreprise: Onepoint (AI Lab)
 date_debut: 2026-09-17
 date_fin: 2026-09-18
-statut: terminé / déployé
+statut: déployé en production
 tags:
   - samsung-flip
   - nextjs
@@ -15,61 +15,56 @@ tags:
   - kiosk-mode
 ---
 
-# 🖥️ Fiche Technique 09 : Generic Showroom Experience — Agentic Livepoint
+# 🖥️ Fiche Technique 09 : Generic Showroom Experience (Samsung Flip)
 
-> **Démonstrateur Déployé :** `https://live-onepoint-git-generic-show-e4035a-aitools-projects-9ec7e8a3.vercel.app/`  
+> **Application en Production :** `https://live-onepoint-git-generic-show-e4035a-aitools-projects-9ec7e8a3.vercel.app/`  
 > **Dépôt Git :** `live-onepoint` (Branche `generic-showroom-experience`).  
-> **Hardwares Cibles :** Écrans tactiles interactifs **Samsung Flip** (55 à 85 pouces) installés en libre-service dans le showroom du Lab.
+> **Rôle d'Émilie :** Refonte frontend Next.js, adaptation matérielle aux écrans Samsung Flip et sécurisation de l'architecture API.
 
 ---
 
-## 📌 1. Contexte & Mission
-
-Initialement développée pour un cas client spécifique (BNP Paribas), l'application interactive `live-onepoint` a été entièrement refondue par Émilie pour devenir le **socle universel de démonstration tactile en libre-service** de l'Agentic Livepoint.
-Ce projet englobe l'accueil du showroom ainsi que deux expériences collaboratives majeures : **Virtual Panel** et **Smart Collab**.
+## 🎯 1. Objectif & Impact Métier
+Transformer une application client unique en un **socle universel et robuste de borne libre-service** pour l'Agentic Livepoint. L'application tourne en continu sur des écrans tactiles interactifs géants (Samsung Flip de 55 à 85 pouces) tout en assurant une réinitialisation automatique et une étanchéité stricte des données entre deux groupes de visiteurs.
 
 ---
 
-## 🎨 2. Direction Artistique AI.LAB & Ergonomie Showroom
-
-Pour rompre avec les interfaces génériques, une nouvelle charte visuelle exclusive a été conçue et déployée sur l'ensemble des écrans :
-- **Identité chromatique :** Fond crème chaleureux parcouru de fines lignes ondulées vectorielles, titres en majuscules avec dégradé subtil, et bandeaux secondaires en typographie monospace.
-- **Typographie universelle :** Poppins adoptée sur tous les composants pour une lisibilité optimale à distance.
-- **Navigation chapeau :** Logo AI.LAB interactif en haut à gauche permettant de revenir à la mosaïque centrale des démonstrateurs à tout moment.
+## 🛠️ 2. Ce que j'ai Conçu & Développé
+- **Adaptabilité Matérielle Multi-Format (Samsung Flip) :** Gestion réactive de l'orientation de l'écran en direct (passage automatique d'une colonne en mode portrait à deux colonnes ergonomiques en paysage sur diagonales de 55" à 85").
+- **Système de Nettoyage Automatique de Borne (Kiosk Mode) :**
+  - Surveillance active de l'inactivité : détection de 3 minutes sans interaction ➔ déclenchement d'un compte à rebours de 25 secondes (*"Toujours là ?"*).
+  - En l'absence de clic : réinitialisation intégrale de l'état applicatif, purge du cache local et retour automatique à l'accueil.
+  - Bouton physique de reset manuel discret en haut à droite pour les animateurs du Lab.
+- **Direction Artistique & Design System AI.LAB :** Déploiement d'un univers visuel complet (fond crème vectoriel ondulé, typographie Poppins, bandeaux monospace, titres dégradés).
+- **Sécurisation Cloud de l'API Gemini :** Élimination de toute saisie ou présence de clé API dans le code frontend ; routage de toutes les requêtes via un proxy d'API serverless sur Vercel.
 
 ---
 
-## 📱 3. Adaptabilité Samsung Flip & Robustesse Kiosque
+## 🏗️ 3. Architecture Technique
 
 ```mermaid
 flowchart TD
-    A["🧍 Visiteur devant l'écran Samsung Flip (55-85 pouces)"] --> B{"Orientation de l'écran"}
-    B -->|"Mode Portrait"| C["📱 Disposition Verticale Responsive"]
-    B -->|"Rotation Paysage"| D["🖥️ 2 Colonnes : Commandes à gauche / Contenu à droite"]
+    A["🧍 Visiteur devant l'écran Samsung Flip (55-85 pouces)"] --> B{"Capteur d'orientation physique"}
+    B -->|"Portrait"| C["📱 Vue 1 Colonne Verticale"]
+    B -->|"Paysage"| D["🖥️ Vue 2 Colonnes (Commandes + Contenu)"]
     
-    A --> E["⏰ Détecteur d'Inactivité"]
-    E -->|"3 minutes sans interaction"| F["⚠️ Modal 'Toujours là ?' (compteur 25s)"]
-    F -->|"Pas de réponse"| G["🔄 Reset Total de Session & Nettoyage Cache"]
-    F -->|"Clic visiteur"| H["✅ Reprise de la Session en cours"]
+    A --> E["⏰ Timeout d'Inactivité (3 min)"]
+    E --> F["⚠️ Modal 'Toujours là ?' (25s)"]
+    F -->|"Non répondu"| G["🔄 Purge Totale Cache & État ➔ Accueil"]
 ```
-
-### Mécanismes Développés :
-1. **Responsive Multi-Format (55" à 85") :** Adaptation dynamique en direct lors de la rotation de l'écran Samsung Flip (passage fluide d'une colonne verticale à deux colonnes ergonomiques en paysage).
-2. **Système de Nettoyage Automatique de Borne :**
-   - Surveillance de l'inactivité utilisateur : au bout de 3 minutes, affichage d'un avertissement de 25 secondes (*"Toujours là ?"*).
-   - En l'absence de clic, réinitialisation intégrale de l'état, purge des données temporaires et retour à l'écran d'accueil pour le visiteur suivant.
-   - Bouton de réinitialisation manuelle immédiate en haut à droite pour les animateurs du Lab.
 
 ---
 
-## 🔒 4. Sécurité & Refonte d'Infrastructure
+## ⚡ 4. Défis Techniques Résolus (Preuves de Compétence)
 
-- **Sécurisation de l'API Google Gemini :** Élimination de toute saisie ou exposition de clé API côté client ; toutes les requêtes sont désormais encapsulées derrière une fonction serverless sécurisée hébergée sur Vercel.
-- **Assainissement du Codebase :** Suppression de l'ancien serveur obsolète, purge de l'outil *Data Scout* devenu inutile, et élimination des dépendances et polices superflues pour alléger le bundle initial.
+| Défi Rencontré | Cause Racine Identifiée | Solution Technique Déployée |
+|:---|:---|:---|
+| **Fuite de données entre sessions clients** | Les données saisies par un client restaient visibles pour le visiteur suivant. | Développement d'un **système de reset d'état absolu à double déclenchement** (temporisateur d'inactivité + bouton de purge manuelle). |
+| **Exposition de clé API sur borne publique** | L'implémentation originelle demandait une clé côté client. | Encapsulation de l'API Gemini derrière une **fonction serverless Vercel sécurisée** sans exposition du token dans le bundle. |
+| **Dette technique & lenteur de chargement** | Présence de code obsolète issu de l'ancien projet (*Data Scout*, polices non utilisées). | Refactoring et nettoyage complet du codebase : réduction substantielle du poids de bundle initial. |
 
 ---
 
 ## 🔗 Liens & Références
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
-- [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Fiche de Compétence : Product Building & Showroom]]
-- [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Fiche de Compétence : Sécurité & Vercel]]
+- [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Compétence : Showroom & Kiosques]]
+- [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Compétence : Sécurité & Vercel]]

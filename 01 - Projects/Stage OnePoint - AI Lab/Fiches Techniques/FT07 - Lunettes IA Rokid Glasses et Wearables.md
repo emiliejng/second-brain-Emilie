@@ -5,7 +5,7 @@ categorie: Ambient Computing & Smart Glasses
 entreprise: Onepoint (AI Lab)
 date_debut: 2026-08-01
 date_fin: 2026-09-17
-statut: terminé / opérationnel
+statut: opérationnel
 tags:
   - rokid-glasses
   - android
@@ -13,52 +13,50 @@ tags:
   - java
   - wearables
   - ambient-computing
-  - smart-glasses
 ---
 
 # 👓 Fiche Technique 07 : Lunettes IA Rokid Glasses & Informatique Ambiante
 
-> **Références Deck Marketing :** Diapositive 44 (*Le form factor : capter le contexte pour gagner en pertinence*) & Diapositive 45 (*Visite assistée : Place à la "Meta Information"*).  
-> **Hardwares Exploités :** Lunettes IA Rokid Glasses with Display (HUD micro-OLED) + Montre connectée enfant Huawei.
+> **Hardwares :** Lunettes AR Rokid Glasses with Display (micro-OLED) + Montre connectée Huawei.  
+> **Rôle d'Émilie :** Développement Android natif, intégration du SDK Rokid et conception de l'expérience d'affichage tête haute (*HUD*).
 
 ---
 
-## 📌 1. Contexte & Enjeux
-
-L'informatique ambiante cherche à effacer les écrans traditionnels pour intégrer l'intelligence artificielle au plus près de la perception humaine.
-Dans cette expérimentation menée au Lab, l'enjeu était d'éprouver ce que les différents formats matériels (*form factors*) captent réellement de notre contexte (regard, voix, gestes, géolocalisation, orientation) et comment restituer une **« Méta-Information »** augmentée en direct sans rompre l'attention de l'utilisateur.
+## 🎯 1. Objectif & Impact Métier
+Démontrer la valeur de l'**informatique ambiante sans écran tenu en main** pour les professionnels de terrain ou les visiteurs du Lab. En captant le contexte visuel et spatial en direct, les lunettes projettent des informations augmentées (*Méta-Information*) dans le champ de vision sans rompre l'attention ni mobiliser les mains.
 
 ---
 
-## 🏗️ 2. Architecture Logicielle & SDK
+## 🛠️ 2. Ce que j'ai Conçu & Développé
+- **Développement Android Natif (Java / Kotlin) :** Conception de l'application compagnon pilotant l'affichage micro-OLED transparent et les flux de capteurs.
+- **Interactions Gestuelles via Branche Tactile :** Implémentation du composant `AiEventListener` sur la branche droite des lunettes (défilement vertical par swipe, sélection par tap, rejet par long-press).
+- **Visite Assistée du Lab par Vision Contextuelle :** Détection automatique d'objets et de QR codes géoréférencés pour déclencher l'affichage instantané de fiches techniques tête haute et la diffusion audio spatiale.
+- **Interface Slicer Verticale :** Conception d'un menu déroulant adapté à la vision périphérique, synchronisé en direct avec un curseur interactif (*SeekBar*) sur smartphone.
+
+---
+
+## 🏗️ 3. Architecture Technique
 
 ```mermaid
-flowchart TD
-    A["👓 Lunettes Rokid Glasses (Capteurs & Caméra)"] --> B["👆 Branche Tactile (AiEventListener)"]
-    B --> C["📱 Application Android Compagnon (Kotlin / Java)"]
-    C --> D["📷 Détection Visuelle (QR Codes & Objets du Lab)"]
-    D --> E["🧠 Modèle Multimodal Contextuel"]
-    E --> F["👁️ Affichage HUD Micro-OLED Tête Haute"]
-    E --> G["🔊 Audio Spatialisé Directionnel"]
+flowchart LR
+    A["👓 Capteurs & Caméra Lunettes"] --> B["👆 Branche Tactile (AiEventListener)"]
+    B --> C["📱 Application Android (Kotlin / Java)"]
+    C --> D["🧠 Modèle Vision & Méta-Information"]
+    D --> E["👁️ Affichage Tête Haute HUD Micro-OLED"]
 ```
 
 ---
 
-## 🚀 3. Réalisations & Fonctionnalités Développées
+## ⚡ 4. Défis Techniques Résolus (Preuves de Compétence)
 
-1. **Visite Augmentée du Lab Onepoint (Meta-Information) :**
-   - Le visiteur explore l'espace physique du Lab.
-   - En fixant un démonstrateur ou un QR code contextuel, les lunettes projettent instantanément une fiche synthétique dans son champ de vision et déclenchent une explication vocale personnalisée dans les branches audio.
-2. **Contrôle Gestuel & Tactile via la Branche :**
-   - Implémentation du composant d'écoute tactile `AiEventListener` sur la branche des lunettes pour défiler, valider ou congédier une information sans avoir à sortir un smartphone.
-3. **Interface de Slicer Visuel Vertical :**
-   - Conception d'un menu de navigation vertical optimisé pour la surface d'affichage tête haute, synchronisé avec un curseur interactif (*SeekBar*) sur le smartphone compagnon.
-4. **Croisement de Données Ambiantes :**
-   - Expérimentation conjointe avec une montre connectée pour croiser la géolocalisation, les micros ambiants et les données biométriques simples.
+| Défi Rencontré | Cause Racine Identifiée | Solution Technique Déployée |
+|:---|:---|:---|
+| **Fatigue visuelle en réalité augmentée** | Des textes trop denses ou colorés occultaient la vue du monde réel. | Design d'un **HUD monochrome épuré à fort contraste**, positionné en coin supérieur pour préserver la vision binoculaire. |
+| **Contrôle sans périphérique externe** | Obligation initiale d'utiliser l'écran tactile du smartphone, cassant l'immersion. | Programmation directe des gestes de la **branche tactile des lunettes (`AiEventListener`)** pour un contrôle 100 % autonome. |
 
 ---
 
 ## 🔗 Liens & Références
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
-- [[02 - Areas/Compétences & R&D IA/Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)|Fiche de Compétence : Ambiance & Wearables]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT08 - Multimodal Rokid x Reachy|FT08 : Projet Multimodal Rokid x Reachy]]
+- [[02 - Areas/Compétences & R&D IA/Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)|Compétence : Wearables & Smart Glasses]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT08 - Multimodal Rokid x Reachy|FT08 — Projet Multimodal : Rokid x Reachy]]

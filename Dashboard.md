@@ -1,66 +1,56 @@
-# 🧠 Second Brain — Émilie
+# 🧠 Second Brain — Émilie Jiang
 
-Bienvenue dans ton **Second Brain** personnel sur Obsidian ! Ce coffre est structuré selon la méthode **P.A.R.A.** (*Projects, Areas, Resources, Archives*) développée par Tiago Forte.
+Bienvenue dans ton **Second Brain** personnel sur Obsidian ! Ce coffre centralise ton profil d'ingénieure, tes compétences de pointe en IA, tes projets de recherche et le catalogue de tes réalisations chez **Onepoint AI Lab**.
 
 ---
 
-## 🔥 Focus Actuel — Stage OnePoint AI Lab
+## 👩‍💻 Profil & Parcours Ingénieure
 
-> **Projet Majeur :** [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|🏢 Stage M2 — AI Innovation & Agentic Systems (OnePoint AI Lab)]]  
-> Déploiement de briques agentiques, produits multimodaux, robotique incarnée et démonstrateurs immersifs pour l'**Agentic Livepoint**.
+> **Émilie Jiang** — Étudiante Ingénieure (Bac+5 ESILV / MSc IFT)  
+> *Creative Technology & AI Product Builder* | Systèmes Agentiques, IA Multimodale, Deep Learning & IHM.  
+> 🌐 Portfolio : [portfolio-emilie-jiang.vercel.app](http://portfolio-emilie-jiang.vercel.app/)
 
-### 📋 Fiches Techniques Projets (OnePoint)
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT01 - Agent Video Propale Remotion Lambda|FT01 — Agent Vidéo Propale (Remotion & Lambda)]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT02 - Agent Proposition Commerciale PPTX|FT02 — Agent Proposition Commerciale PPTX (Claude)]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT03 - Agent Veille Tech Obsidian|FT03 — Agent Veille Événementielle Tech (Obsidian)]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT04 - Experiences Retail AI Virtual Try On|FT04 — Suite Retail AI & Virtual Try-On]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT05 - Vocal Playground et Comite Simule|FT05 — Vocal Playground & Comité Simulé]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT06 - Reachy Mini Robotique et MuJoCo|FT06 — Reachy Mini & Simulation MuJoCo]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT07 - Lunettes IA Rokid Glasses et Wearables|FT07 — Lunettes IA Rokid & Wearables]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT08 - Multimodal Rokid x Reachy|FT08 — Projet Multimodal : Rokid x Reachy]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT09 - Generic Showroom Experience Livepoint|FT09 — Generic Showroom Experience (Samsung Flip)]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT10 - Prospection Salons et Curation Tech|FT10 — Prospection Salons & Curation Tech]]
+- [[02 - Areas/Profil & Carrière/Profil & Parcours — Émilie Jiang|👤 Fiche de Profil Complète]]
+- [[02 - Areas/Profil & Carrière/Formation & Diplômes|🎓 Formation & Diplômes (ESILV, IFT, CUPGE Paris-Cité)]]
+- [[02 - Areas/Profil & Carrière/Expériences Professionnelles|💼 Expériences Professionnelles (OnePoint, LIULAB Zhejiang, Pitié-Salpêtrière)]]
+- [[02 - Areas/Profil & Carrière/Projets Phares & Recherche|🚀 Projets Phares & Recherche (Sealy Robot, MNIST TinyGrad WebGPU, ESP32)]]
+- [[02 - Areas/Profil & Carrière/Cartographie des Compétences & Stack|⚡ Cartographie Exhaustive des Compétences & Stack]]
 
-### 🧠 Compétences Acquises & R&D IA
-- [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Architecture Agentique & Meta-Prompting]]
-- [[02 - Areas/Compétences & R&D IA/IA Multimodale (Audio, Voix, Vidéo, Vision)|IA Multimodale (Audio, Voix, Vidéo, Vision)]]
-- [[02 - Areas/Compétences & R&D IA/Video-as-Code & Motion Design (Remotion & Lambda)|Video-as-Code & Motion Design (Remotion & Lambda)]]
-- [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)]]
-- [[02 - Areas/Compétences & R&D IA/Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)|Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)]]
-- [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Product Building IA & Showroom Expérientiel]]
+---
 
-### 🎪 Offre & Vision Stratégique (Deck Marketing)
+## 🔥 Portfolio Technique — OnePoint AI Lab
+
+> **Projet Majeur M2 :** [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|🏢 Stage M2 — AI Innovation & Agentic Systems (OnePoint AI Lab)]]  
+> Conception, sécurisation et déploiement de briques agentiques, systèmes multimodaux et démonstrateurs immersifs pour l'**Agentic Livepoint**.
+
+### 📋 10 Fiches Techniques (Preuves de Compétence & R&D)
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT01 - Agent Video Propale Remotion Lambda|FT01 — Agent Vidéo Propale (Remotion Video-as-Code & AWS Lambda)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT02 - Agent Proposition Commerciale PPTX|FT02 — Agent Proposition Commerciale PPTX (Anthropic Managed Agents)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT03 - Agent Veille Tech Obsidian|FT03 — Agent Veille Tech (GitHub Actions & Gemini 2.5 Flash)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT04 - Experiences Retail AI Virtual Try On|FT04 — Suite Retail AI & Virtual Try-On (Computer Vision)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT05 - Vocal Playground et Comite Simule|FT05 — Vocal Playground & Comité Simulé (Voice Cloning 11 langues)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT06 - Reachy Mini Robotique et MuJoCo|FT06 — Reachy Mini & Simulation 3D MuJoCo (IA Incarnée)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT07 - Lunettes IA Rokid Glasses et Wearables|FT07 — Lunettes IA Rokid Glasses & Wearables (Android HUD)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT08 - Multimodal Rokid x Reachy|FT08 — Projet Multimodal : Rokid x Reachy (Streaming WebSocket)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT09 - Generic Showroom Experience Livepoint|FT09 — Generic Showroom Experience (Samsung Flip Kiosk 55-85")]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT10 - Prospection Salons et Curation Tech|FT10 — Prospection Salons & Curation Tech (VivaTech, Google Summit, WAIC)]]
+
+### 🎪 Offre & Stratégie (Deck Marketing Livepoint)
 - [[01 - Projects/Stage OnePoint - AI Lab/Offre & Parcours Client — Agentic Livepoint|🎯 Offre & Parcours Client (4 Temps, 4 Cibles, Tarifs)]]
 - [[01 - Projects/Stage OnePoint - AI Lab/Catalogue des 20 Expériences de l'Agentic Livepoint|🎪 Catalogue Exhaustif des 20 Expériences du Livepoint]]
 - [[03 - Resources/Vision Frontier Firm & Organisation Agentique|🌐 Fiche Concept : La « Frontier Firm » & l'Économie Agentique]]
 
 ---
 
-## ⚡ Navigation Rapide
+## ⚡ Navigation Méthode P.A.R.A.
 
 | Dossier | Description | Statut |
 | :--- | :--- | :--- |
-| [[00 - Inbox/Bienvenue dans ton Second Brain\|📥 00 - Inbox]] | Idées brutes, captures rapides, notes à traiter | En attente de tri |
-| [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage\|🎯 01 - Projects]] | Projets en cours avec échéance ou livrable | Actif (OnePoint AI Lab) |
-| [[02 - Areas/Développement Personnel & Compétences\|🌱 02 - Areas]] | Domaines de responsabilité continus (santé, compétences, R&D) | Long terme |
-| [[03 - Resources/Méthode PARA\|📚 03 - Resources]] | Références, guides, fiches de lecture, cheat sheets | Permanent |
-| [[04 - Archives/\|📦 04 - Archives]] | Projets terminés, notes inactives | Archivé |
-
----
-
-## 🚀 Processus CODE (Workflow)
-
-```mermaid
-flowchart LR
-    A["📥 Capture<br>(Inbox)"] --> B["🗂️ Organise<br>(PARA)"]
-    B --> C["🔍 Distille<br>(Notes clés)"]
-    C --> D["🎨 Exprime<br>(Création & Action)"]
-```
-
-1. **Capturer (Capture) :** Dépose rapidement tes pensées, liens et idées dans `00 - Inbox`.
-2. **Organiser (Organize) :** Déplace régulièrement tes notes vers les dossiers `Projects`, `Areas` ou `Resources`.
-3. **Distiller (Distill) :** Mets en gras, surligne et résume les points clés de tes notes.
-4. **Exprimer (Express) :** Utilise tes notes interconnectées pour créer, produire et mener à bien tes projets.
+| [[00 - Inbox/Bienvenue dans ton Second Brain\|📥 00 - Inbox]] | Idées brutes, captures rapides, notes à trier | En attente de tri |
+| [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage\|🎯 01 - Projects]] | Projets en cours et livrables majeurs | Actif (OnePoint AI Lab) |
+| [[02 - Areas/Profil & Carrière/Profil & Parcours — Émilie Jiang\|🌱 02 - Areas]] | Profil, compétences R&D et développement long terme | Permanent |
+| [[03 - Resources/Méthode PARA\|📚 03 - Resources]] | Références, guides méthodologiques, fiches théoriques | Permanent |
+| [[04 - Archives/\|📦 04 - Archives]] | Projets terminés, notes historiques | Archivé |
 
 ---
 

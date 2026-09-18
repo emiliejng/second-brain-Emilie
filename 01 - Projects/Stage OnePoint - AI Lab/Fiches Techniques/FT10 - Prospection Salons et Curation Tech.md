@@ -1,7 +1,7 @@
 ---
 type: fiche-technique
 projet: Prospection Grands Salons Tech & Curation de l'Agentic Livepoint
-categorie: Tech Watch, Competitive Benchmarking & Business Strategy
+categorie: Tech Watch & Strategic Benchmarking
 entreprise: Onepoint (AI Lab)
 date_debut: 2026-05-01
 date_fin: 2026-09-18
@@ -11,48 +11,54 @@ tags:
   - google-cloud-summit
   - waic-shanghai
   - frontier-firm
-  - competitive-analysis
-  - benchmark
+  - benchmarking
+  - veille-strategique
 ---
 
-# 🌐 Fiche Technique 10 : Prospection Grands Salons Tech & Curation Livepoint
+# 🌐 Fiche Technique 10 : Prospection Salons Tech & Curation Livepoint
 
-> **Événements Couverts :** VivaTech 2026 (Paris), Google Cloud Summit (Paris), World AI Conference — WAIC 2026 (Shanghai).  
-> **Cadre Stratégique :** Curation du catalogue des ~20 expériences de l'**Agentic Livepoint** et formalisation de la vision d'entreprise **« Frontier Firm »**.
-
----
-
-## 📌 1. Missions de Veille Stratégique sur le Terrain
-
-La participation aux plus grands salons mondiaux de l'intelligence artificielle a permis d'alimenter directement la R&D du Lab IA et la pertinence des démonstrateurs présentés aux COMEX :
-1. **Prospection & Détection de Signaux Faibles :** Identifier les ruptures technologiques avant leur banalisation sur le marché.
-2. **Benchmark Concurrentiel :** Comparer les approches des hyperscalers (Google Cloud, Microsoft Azure, AWS Bedrock) et des acteurs émergents (Anthropic, fal.ai, ElevenLabs, Pollen Robotics).
-3. **Idéation d'Expériences Clients :** Traduire des démonstrations techniques complexes en cas d'usage métier compréhensibles en moins de 5 minutes par des décideurs non-techniques.
+> **Événements Couverts sur le Terrain :** VivaTech 2026 (Paris), Google Cloud Summit (Paris), World AI Conference — WAIC 2026 (Shanghai).  
+> **Rôle d'Émilie :** Veille technologique terrain, benchmark des hyperscalers et curation technique du catalogue de démonstrateurs de l'Agentic Livepoint.
 
 ---
 
-## 🏛️ 2. La Vision d'Entreprise : « Devenir une Frontier Firm »
-
-Inspirée des travaux de recherche et des retours terrain, la vision diffusée auprès des clients du Lab repose sur 3 constats majeurs :
-- **Rupture d'usage :** Passer de l'IA générative (qui répond et assiste une tâche à la fois) à l'**IA agentique** (qui décide, exécute et enchaîne les tâches dans un système hybride).
-- **Le modèle organisationnel :** Une *Frontier Firm* ne stocke plus l'information de manière hiérarchique mais bâtit un système auto-alimenté où chaque action produit la donnée qui nourrit la suivante.
-- **La maîtrise du tempo :** Aider les comités de direction à arbitrer entre le risque du retard technologique et le risque d'un investissement prématuré non stabilisé.
+## 🎯 1. Objectif & Impact Métier
+Identifier les technologies émergentes à l'état de l'art avant leur banalisation industrielle, évaluer leur maturité réelle et les convertir en **démonstrateurs tangibles actionnables en moins de 5 minutes** pour les comités de direction accueillis au Lab.
 
 ---
 
-## 🧪 3. Catalogue d'Expériences Cérébrées & Sourcées
+## 🛠️ 2. Ce que j'ai Conçu & Développé
+- **Benchmarks Concurrentiels Approfondis :** Analyse comparative des offres agentiques et multimodales des leaders du marché (Google Vertex AI / Astra, Microsoft Azure AI, Anthropic Managed Agents, AWS Bedrock).
+- **Formalisation Technique de la « Frontier Firm » :** Définition de l'échelle de délégation humain-agent et modélisation de la rupture économique (passage de la licence par utilisateur à la facturation à la valeur/action).
+- **Curation & Prototypage de Cas d'Usage :** Sourcing et cadrage direct de plusieurs expériences phares du catalogue :
+  - *La Faille :* Conception du challenge de prompt injection en 8 étapes pour sensibiliser les DSI aux vulnérabilités des agents.
+  - *Almorphose :* Intégration du moteur d'art génératif Krea.
+  - *Project Astra :* Modélisation de cas d'assistance industrielle en vision multimodale temps réel.
 
-| Expérience Livepoint | Source d'Inspiration / Partenaire | Enjeu Démontré |
+---
+
+## 🏗️ 3. Méthodologie de Curation & Transfert Technologique
+
+```mermaid
+flowchart LR
+    A["🌍 Salons Mondiaux (VivaTech, Google Summit, WAIC)"] --> B["🔍 Analyse Critique & Benchmarking"]
+    B --> C["🔬 Filtre du Lab : Tri du Buzz vs Valeur Réelle"]
+    C --> D["⚡ Prototypage Rapide (< 1h)"]
+    D --> E["🏛️ Expérience Immersion Client (Livepoint)"]
+```
+
+---
+
+## ⚡ 4. Preuves d'Expertise Stratégique & Technologique
+
+| Enjeu Clé | Analyse Réalisée | Restitution Opérationnelle au Lab |
 |:---|:---|:---|
-| **Project Astra (Google)** | Démonstrations Google Cloud Summit / DeepMind | Vision temps réel multimodale pour l'assistance technique sur machine industrielle. |
-| **Almorphose** | Krea AI (VivaTech) | Matérialiser l'IA par l'art génératif instantané pour l'accueil des visiteurs. |
-| **La Faille (Prompt Injection)** | Challenges de sécurité WAIC Shanghai | Défi de hacking en 8 étapes pour sensibiliser les DSI aux risques de fuites de données. |
-| **La Facture** | Retours d'expérience déploiement LLM | Simulateur temps réel du coût token/API vs modèle de licence d'entreprise. |
-| **Elio Workspace** | R&D interne Onepoint | Démonstration du nouvel environnement agentique des consultants Onepoint. |
+| **Rupture économique du SaaS traditionnel** | Étude du cas Salesforce début 2026 : perte de 31 % sur le modèle de licence par siège remplacé par le travail agentique. | Intégration de l'argumentaire *Frontier Firm* et conception du simulateur *La Facture* pour aider les clients à chiffrer leur transition. |
+| **Sécurisation des architectures agentiques** | Identification de vecteurs d'attaque par injection indirecte de prompt observés lors de la WAIC Shanghai. | Création du simulateur *La Faille* et durcissement des garde-fous sur l'ensemble des agents développés au Lab (Ellis, ScriptWriter). |
 
 ---
 
 ## 🔗 Liens & Références
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
-- [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Fiche de Compétence : Product Building & Showroom]]
-- [[03 - Resources/Méthode PARA|Méthode P.A.R.A.]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Catalogue des 20 Expériences de l'Agentic Livepoint|Catalogue des 20 Expériences du Livepoint]]
+- [[03 - Resources/Vision Frontier Firm & Organisation Agentique|Fiche Concept : La Frontier Firm]]

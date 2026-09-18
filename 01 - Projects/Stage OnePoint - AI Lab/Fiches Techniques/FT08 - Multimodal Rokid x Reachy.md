@@ -11,70 +11,70 @@ tags:
   - rokid-glasses
   - explainable-ai
   - multimodal
-  - reasoning-trace
+  - websocket
   - livepoint-flagship
 ---
 
-# 👁️‍🗨️ Fiche Technique 08 : Projet Multimodal Rokid x Reachy — « Dans la tête de l'Agent »
+# 👁️‍🗨️ Fiche Technique 08 : Multimodal Rokid x Reachy — « Dans la tête de l'Agent »
 
-> **Référence Deck Marketing :** Diapositive 52 (*Dans la tête de l'Agent : voir une IA penser en direct*).  
-> **Type de Projet :** Démonstrateur immersif combinant Robotique physique et Affichage tête haute AR.
-
----
-
-## 📌 1. Contexte & Intention Pédagogique
-
-Pour la majorité des décideurs d'entreprise, le fonctionnement d'une IA reste une « boîte noire » : on entre un prompt, on attend quelques secondes, et une réponse apparaît sans qu'on comprenne d'où elle provient ni quels outils ont été sollicités.
-L'expérience **« Dans la tête de l'Agent »** brise cette opacité en créant un pont technique direct entre le robot **Reachy Mini** et les **lunettes connectées Rokid**.
+> **Démonstrateur Flagship du Lab :** Expérience combinant Robotique humanoïde et Réalité Augmentée.  
+> **Rôle d'Émilie :** Conception de l'architecture de synchronisation multimodale, protocole WebSocket temps réel et affichage de l'IA explicable (*XAI*).
 
 ---
 
-## 🔄 2. Parcours Utilisateur & Scénario Immersif
+## 🎯 1. Objectif & Impact Métier
+Démystifier la « boîte noire » de l'intelligence artificielle pour les dirigeants : pendant que le robot **Reachy Mini** réfléchit et répond à voix haute à un problème complexe, l'observateur équipé des **lunettes Rokid** voit s'afficher en direct dans son champ de vision la chaîne de raisonnement exacte de l'agent (*Reasoning Trace*) et les outils qu'il mobilise.
+
+---
+
+## 🛠️ 2. Ce que j'ai Conçu & Développé
+- **Protocole de Synchronisation Événementiel (WebSockets) :** Développement d'un bus de communication ultra-rapide reliant le runtime Python de Reachy et l'application Android des lunettes Rokid.
+- **Moteur d'Extraction de Trace de Raisonnement (XAI) :** Capture et filtrage temps réel des événements d'exécution du LLM (*Appel d'outil web, interrogation base interne, observation, synthèse*).
+- **Rendu Tête Haute Réactif :** Affichage HUD optimisé sur micro-OLED transparent matérialisant visuellement les étapes de pensée au fur et à mesure que le robot s'anime.
+
+---
+
+## 🏗️ 3. Architecture Technique
 
 ```mermaid
 sequenceDiagram
     autonumber
     actor Visiteur as 👤 Visiteur
-    participant Reachy as 🤖 Robot Reachy Mini
-    participant Agent as 🧠 Moteur Agentique (Tools / LLM)
+    participant Reachy as 🤖 Reachy Mini (Robot)
+    participant Moteur as 🧠 Orchestrateur Agentique (Python)
     participant Rokid as 👓 Lunettes Rokid (HUD)
 
-    Visiteur->>Reachy: Pose une question complexe à l'oral
-    Reachy->>Agent: Analyse NLU de la requête
-    par Raisonnement & Tool Calling
-        Agent->>Agent: Déclenche recherche web / données internes
-        Agent-->>Rokid: Envoie en temps réel le nom de l'outil et l'extrait brut
-        Rokid->>Visiteur: Affiche le flux de pensée ("Recherche Base CRM...")
-    and Animation Motrice
-        Agent-->>Reachy: Déclenche des micro-gestes expressifs de réflexion
+    Visiteur->>Reachy: Question orale complexe
+    Reachy->>Moteur: Flux audio
+    par Raisonnement & Streaming
+        Moteur->>Moteur: Tool Calling (Recherche / Calcul)
+        Moteur-->>Rokid: Stream WebSocket (<80ms) du flux de pensée
+        Rokid->>Visiteur: Affichage tête haute de l'outil et des données brutes
+    and Expression Motrice
+        Moteur-->>Reachy: Mouvements de réflexion synchrones
     end
-    Agent->>Reachy: Génération de la synthèse finale
+    Moteur->>Reachy: Synthèse vocale
     Reachy->>Visiteur: Réponse articulée à voix haute
-    Rokid->>Visiteur: Affiche la validation du résultat final
 ```
 
 ---
 
-## ⚙️ 3. Architecture Technique de Synchronisation
+## ⚡ 4. Défis Techniques Résolus (Preuves de Compétence)
 
-1. **Serveur d'Orchestration Local (Agent Host) :**
-   - Écoute les requêtes audio via le micro de Reachy.
-   - Orchestre le modèle de raisonnement (Tool-calling : météo, recherche documentaire, bases internes).
-2. **Flux WebSocket Bidirectionnel :**
-   - Stream en quasi temps réel (< 80 ms de latence) des événements d'exécution (*Thinking steps*, *Tool invocation*, *Observation*, *Final answer*) vers l'application Android des lunettes.
-3. **Moteur de Rendu Head-Up Display (Rokid HUD) :**
-   - Affichage graphique épuré et contrasté (vert néon / blanc sur fond transparent) pour rester lisible en surimpression de la pièce réelle sans gêner la vision de l'interlocuteur.
+| Défi Rencontré | Cause Racine Identifiée | Solution Technique Déployée |
+|:---|:---|:---|
+| **Latence entre la parole et l'affichage** | Un décalage entre les gestes du robot et l'affichage HUD brisait la sensation de simultanéité. | Implémentation d'un **serveur WebSocket local léger** maintenant la latence sous la barre des **80 millisecondes**. |
+| **Surcharge cognitive dans le HUD** | Le flux de tokens brut du modèle était illisible pour un humain en direct. | Conception d'un **filtre sémantique en amont** ne transmettant que les états discrets (*"Recherche base CRM"*, *"Vérification calendrier"*, *"Validation"*). |
 
 ---
 
-## 💎 4. Valeur Démontrée aux Clients du Lab
-
-- **Explicabilité totale (XAI) :** Comprendre instantanément la différence entre une simple réponse statistique et un véritable raisonnement agentique multi-outils.
-- **Transparence et confiance :** Identifier la source exacte de chaque chiffre ou affirmation émise par l'agent.
+## 📊 5. Métriques & Impact
+- **Latence de streaming :** **< 80 ms** entre l'appel d'outil serveur et son apparition dans le champ de vision.
+- **Impact client :** Démonstrateur le plus marquant du Lab pour faire comprendre la différence entre un chatbot et un système agentique multi-outils.
 
 ---
 
 ## 🔗 Liens & Références
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT06 - Reachy Mini Robotique et MuJoCo|FT06 : Robot Reachy Mini]]
-- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT07 - Lunettes IA Rokid Glasses et Wearables|FT07 : Lunettes Rokid Glasses]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT06 - Reachy Mini Robotique et MuJoCo|FT06 — Reachy Mini]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT07 - Lunettes IA Rokid Glasses et Wearables|FT07 — Lunettes Rokid]]
