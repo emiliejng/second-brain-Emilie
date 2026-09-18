@@ -29,6 +29,11 @@ Bienvenue dans ton **Second Brain** personnel sur Obsidian ! Ce coffre est struc
 - [[02 - Areas/Compétences & R&D IA/Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)|Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)]]
 - [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Product Building IA & Showroom Expérientiel]]
 
+### 🎪 Offre & Vision Stratégique (Deck Marketing)
+- [[01 - Projects/Stage OnePoint - AI Lab/Offre & Parcours Client — Agentic Livepoint|🎯 Offre & Parcours Client (4 Temps, 4 Cibles, Tarifs)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Catalogue des 20 Expériences de l'Agentic Livepoint|🎪 Catalogue Exhaustif des 20 Expériences du Livepoint]]
+- [[03 - Resources/Vision Frontier Firm & Organisation Agentique|🌐 Fiche Concept : La « Frontier Firm » & l'Économie Agentique]]
+
 ---
 
 ## ⚡ Navigation Rapide
