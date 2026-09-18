@@ -37,3 +37,11 @@ L'**architecture agentique** désigne la conception de systèmes logiciels où d
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT02 - Agent Proposition Commerciale PPTX|FT02 — Agent Proposition Commerciale (Claude Managed Agents)]]
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT03 - Agent Veille Tech Obsidian|FT03 — Agent Veille Tech (Gemini 2.5 Flash)]]
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT05 - Vocal Playground et Comite Simule|FT05 — Comité Simulé (Débat multi-agents)]]
+
+---
+
+## 🔗 Liens Transversaux
+- [[02 - Areas/Profil & Carrière/Cartographie des Compétences & Stack|⚡ Cartographie des Compétences & Stack]]
+- [[03 - Resources/Vision Frontier Firm & Organisation Agentique|🌐 Fiche Concept : Vision Frontier Firm]]
+- [[02 - Areas/Compétences & R&D IA/IA Multimodale (Audio, Voix, Vidéo, Vision)|Compétence : IA Multimodale]]
+- [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ MOC — Carte des Connaissances & Graphe]]

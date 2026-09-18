@@ -43,3 +43,11 @@ Cette compétence explore la matérialisation de l'IA dans le monde réel à tra
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT06 - Reachy Mini Robotique et MuJoCo|FT06 — Reachy Mini (Robotique & MuJoCo)]]
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT07 - Lunettes IA Rokid Glasses et Wearables|FT07 — Lunettes IA Rokid & Wearables]]
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT08 - Multimodal Rokid x Reachy|FT08 — Projet Multimodal Rokid x Reachy]]
+
+---
+
+## 🔗 Liens Transversaux
+- [[02 - Areas/Profil & Carrière/Cartographie des Compétences & Stack|⚡ Cartographie des Compétences & Stack]]
+- [[02 - Areas/Profil & Carrière/Projets Phares & Recherche|Projets Phares : Sealy Robot Compagnon]]
+- [[02 - Areas/Compétences & R&D IA/IA Multimodale (Audio, Voix, Vidéo, Vision)|Compétence : IA Multimodale]]
+- [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ MOC — Carte des Connaissances & Graphe]]

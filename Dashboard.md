@@ -54,14 +54,29 @@ Bienvenue dans ton **Second Brain** personnel sur Obsidian ! Ce coffre centralis
 
 ---
 
+## 🧠 Les 8 Domaines de Compétences R&D IA (Pôles d'Expertise)
+
+> [[02 - Areas/Développement Personnel & Compétences|Accéder au hub global des domaines & compétences]] · [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ Consulter l'Atlas relationnel du Graphe (MOC)]]
+
+1. [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Architecture Agentique & Meta-Prompting]]
+2. [[02 - Areas/Compétences & R&D IA/IA Multimodale (Audio, Voix, Vidéo, Vision)|IA Multimodale (Audio, Voix, Vidéo, Vision)]]
+3. [[02 - Areas/Compétences & R&D IA/Video-as-Code & Motion Design (Remotion & Lambda)|Video-as-Code & Motion Design (Remotion & Lambda)]]
+4. [[02 - Areas/Compétences & R&D IA/Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)|Robotique Incarnée & Informatique Ambiante]]
+5. [[02 - Areas/Compétences & R&D IA/Graph Neural Networks & Chimie Computationnelle (DimeNet++, Transformer, QM9)|Graph Neural Networks & Chimie Computationnelle]]
+6. [[02 - Areas/Compétences & R&D IA/Calcul Haute Performance & Distributed Deep Learning (SLURM, Multi-GPU)|Calcul Haute Performance & Distributed Deep Learning (SLURM)]]
+7. [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Product Building IA & Showroom Expérientiel]]
+8. [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Cloud Serverless & Sécurité des Systèmes IA]]
+
+---
+
 ## ⚡ Navigation Méthode P.A.R.A.
 
 | Dossier | Description | Statut |
 | :--- | :--- | :--- |
 | [[00 - Inbox/Bienvenue dans ton Second Brain\|📥 00 - Inbox]] | Idées brutes, captures rapides, notes à trier | En attente de tri |
-| [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage\|🎯 01 - Projects]] | Projets en cours et livrables majeurs | Actif (OnePoint AI Lab) |
-| [[02 - Areas/Profil & Carrière/Profil & Parcours — Émilie Jiang\|🌱 02 - Areas]] | Profil, compétences R&D et développement long terme | Permanent |
-| [[03 - Resources/Méthode PARA\|📚 03 - Resources]] | Références, guides méthodologiques, fiches théoriques | Permanent |
+| [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage\|🎯 01 - Projects]] | Projets en cours et livrables majeurs (OnePoint & ZJU) | Actif |
+| [[02 - Areas/Développement Personnel & Compétences\|🌱 02 - Areas]] | Profil, 8 compétences R&D et développement long terme | Permanent |
+| [[03 - Resources/MOC - Carte des Connaissances & Graphe\|📚 03 - Resources]] | Atlas du graphe, vision Frontier Firm, méthode PARA | Permanent |
 | [[04 - Archives/\|📦 04 - Archives]] | Projets terminés, notes historiques | Archivé |
 
 ---

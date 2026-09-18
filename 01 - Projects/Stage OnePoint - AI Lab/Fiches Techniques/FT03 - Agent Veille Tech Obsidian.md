@@ -65,7 +65,10 @@ flowchart LR
 
 ---
 
-## 🔗 Liens & Références
+## 🔗 Liens & Connexions Graphe
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
-- [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Compétence : Cloud & Automatisation]]
-- [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Compétence : Meta-Prompting & LLMs]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT10 - Prospection Salons et Curation Tech|FT10 — Prospection Salons & Curation Tech]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT01 - Agent Video Propale Remotion Lambda|FT01 — Agent Vidéo Propale]]
+- [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Compétence : Architecture Agentique & Meta-Prompting]]
+- [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Compétence : Cloud Serverless & CI/CD]]
+- [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ MOC — Carte des Connaissances & Graphe]]

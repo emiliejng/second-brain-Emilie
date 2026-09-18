@@ -58,7 +58,11 @@ flowchart LR
 
 ---
 
-## 🔗 Liens & Références
+## 🔗 Liens & Connexions Graphe
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
 - [[01 - Projects/Stage OnePoint - AI Lab/Catalogue des 20 Expériences de l'Agentic Livepoint|Catalogue des 20 Expériences du Livepoint]]
-- [[03 - Resources/Vision Frontier Firm & Organisation Agentique|Fiche Concept : La Frontier Firm]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT03 - Agent Veille Tech Obsidian|FT03 — Agent Veille Tech]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT09 - Generic Showroom Experience Livepoint|FT09 — Generic Showroom Experience]]
+- [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Compétence : Product Building]]
+- [[03 - Resources/Vision Frontier Firm & Organisation Agentique|Fiche Concept : Vision Frontier Firm]]
+- [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ MOC — Carte des Connaissances & Graphe]]

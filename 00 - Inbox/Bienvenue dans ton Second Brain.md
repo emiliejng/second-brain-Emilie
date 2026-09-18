@@ -19,4 +19,9 @@ C'est le point d'entrée unique de toutes tes pensées spontanées, liens d'arti
 > 3. **Ressources (03 - Resources)** : si c'est une référence ou une connaissance générale réutilisable.
 > 4. **Poubelle / Archives** : si ce n'est plus utile.
 
-Tu peux supprimer ou déplacer cette note quand tu auras pris en main ton organisation !
+---
+
+## 🔗 Liens Fondations
+- [[Dashboard|🏠 Accéder au Dashboard]]
+- [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ Consulter la Carte des Connaissances (MOC)]]
+- [[03 - Resources/Méthode PARA|📚 Méthode PARA]]

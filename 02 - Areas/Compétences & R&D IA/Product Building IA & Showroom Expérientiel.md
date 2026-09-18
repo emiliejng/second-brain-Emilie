@@ -40,3 +40,11 @@ Le rôle de **AI Product Builder** se situe au carrefour de la recherche technol
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT05 - Vocal Playground et Comite Simule|FT05 — Vocal Playground & Comité Simulé]]
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT09 - Generic Showroom Experience Livepoint|FT09 — Generic Showroom Experience (Samsung Flip)]]
 - [[01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques/FT10 - Prospection Salons et Curation Tech|FT10 — Prospection Salons & Curation Tech]]
+
+---
+
+## 🔗 Liens Transversaux
+- [[02 - Areas/Profil & Carrière/Cartographie des Compétences & Stack|⚡ Cartographie des Compétences & Stack]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Catalogue des 20 Expériences de l'Agentic Livepoint|Catalogue des 20 Expériences du Livepoint]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Offre & Parcours Client — Agentic Livepoint|Offre & Parcours Client Livepoint]]
+- [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ MOC — Carte des Connaissances & Graphe]]
