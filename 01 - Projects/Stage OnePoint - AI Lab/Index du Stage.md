@@ -61,6 +61,13 @@ Les compétences acquises durant ce stage sont documentées et reliées dans le 
 5. [[02 - Areas/Compétences & R&D IA/Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)|Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)]]
 6. [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Product Building IA & Showroom Expérientiel]]
 
+## 🎪 Offre, Catalogue & Vision Stratégique (Deck Marketing)
+
+Les éléments stratégiques et commerciaux issus du deck de l'**Agentic Livepoint** sont formalisés dans les documents suivants :
+- [[01 - Projects/Stage OnePoint - AI Lab/Offre & Parcours Client — Agentic Livepoint|🎯 Offre & Parcours Client (Les 4 Temps, Tarifs & Cibles)]]
+- [[01 - Projects/Stage OnePoint - AI Lab/Catalogue des 20 Expériences de l'Agentic Livepoint|🎪 Catalogue Exhaustif des 20 Expériences Livepoint]]
+- [[03 - Resources/Vision Frontier Firm & Organisation Agentique|🌐 Fiche Concept : La « Frontier Firm » & l'Organisation Agentique]]
+
 ---
 
 ## 🔗 Liens Rapides
