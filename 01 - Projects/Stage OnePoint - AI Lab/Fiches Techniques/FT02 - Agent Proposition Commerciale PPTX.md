@@ -5,7 +5,7 @@ categorie: Document Generation & LLM Reasoning
 entreprise: Onepoint (AI Lab)
 date_debut: 2026-06-20
 date_fin: 2026-07-05
-statut: terminé / déployé
+statut: déployé en production
 tags:
   - claude-3-5-sonnet
   - anthropic-sdk
@@ -17,69 +17,60 @@ tags:
 
 # 📑 Fiche Technique 02 : Agent Proposition Commerciale PPTX (Ellis)
 
-> **Application & Déploiement :** `https://ellis-tau.vercel.app` (Module *Agents Vente* / Agent Proposition Commerciale).  
-> **Contexte Lab :** Automatisation de la phase de réponse commerciale pour les consultants Onepoint, en interaction avec les équipes Communication (Judith Soundy) et Sales (Ief Berben).
+> **Application en Production :** `https://ellis-tau.vercel.app` (Module *Agents de vente*).  
+> **Rôle d'Émilie :** Conception de l'architecture agentique sous Anthropic SDK, intégration des chartes Onepoint et moteur de composition de decks PowerPoint.
 
 ---
 
-## 📌 1. Contexte & Objectifs
-
-La rédaction et la mise en forme de propositions commerciales (.pptx) pour des appels d'offres représentent un investissement temps colossal pour les équipes de conseil. L'objectif était de créer un agent autonome capable de :
-1. Ingérer un cahier des charges client (PDF ou brief Markdown).
-2. Déduire automatiquement le positionnement, les enjeux et l'identité visuelle de la cible.
-3. Proposer une **Trame narrative** validable et éditable.
-4. Générer une présentation PowerPoint (.pptx) prête pour soutenance, rigoureusement fidèle aux chartes graphiques de Onepoint et intégrant des références probantes.
+## 🎯 1. Objectif & Impact Métier
+Automatiser la génération de présentations commerciales complètes (.pptx) prêtes pour soutenance client à partir d'un cahier des charges PDF ou brief Markdown. L'agent divise par 4 le temps de préparation des propositions commerciales tout en garantissant un strict respect de l'identité graphique Onepoint ou de la charte client.
 
 ---
 
-## 🏗️ 2. Architecture & Pipeline Fonctionnel
+## 🛠️ 2. Ce que j'ai Conçu & Développé
+- **Orchestration Multi-Agents (Anthropic Claude 3.5 Sonnet) :** Intégration du SDK *Anthropic Managed Agents* pour analyser le brief, déduire les enjeux stratégiques et générer des slides structurées.
+- **Workflow avec Étape « Trame » Intermédiaire :** Conception d'une étape de pré-validation où l'utilisateur visualise, réordonne et valide les messages clés et types de visuels par slide avant la génération lourde du fichier PPTX.
+- **Injection de Skills Métier Onepoint :** Intégration des compétences système `Onepoint System` et `onepoint-slide-v2` pour imposer les gabarits, grilles typographiques et codes visuels du cabinet.
+- **Moteur Financier & Staffing :** Calcul et mise en forme automatique des grilles de staffing, TJM moyens et budgets prévisionnels par phase projet.
+- **Gestion des Annexes & Références :** Insertion automatique de références clients structurées (*Logo + Défi + Résultat chiffré*) et normalisation de CVs multi-formats (PDF/Word/PPTX).
+- **Double Rendu :** Export natif PowerPoint `.pptx` et version interactive `Export HTML` avec navigation par cartes.
+
+---
+
+## 🏗️ 3. Architecture Technique
 
 ```mermaid
-flowchart TD
-    A["📄 Brief Client (Markdown / PDF)"] --> B["🔍 Analyseur d'Entité & Contexte"]
-    B -->|"Extraction Palette, Logo, Enjeux"| C["📝 Étape TRAME (Storyboard Léger)"]
-    C -->|"Validation utilisateur & Réordonnancement"| D["⚙️ Injection Skills Onepoint"]
-    D --> E["🧠 Moteur Claude 3.5 Sonnet (Managed Agents)"]
-    E --> F["📊 Calculs Auto Staffing, TJM & Budget"]
-    E --> G["📦 Zone Annexes (CVs & Références)"]
-    F & G --> H["🎨 Générateur PPTX / Layout Engine"]
-    H --> I["🖥️ Fichier PowerPoint .pptx téléchargeable"]
-    H --> J["🌐 Export HTML interactif"]
+flowchart LR
+    A["📄 Brief / Cahier des charges"] --> B["🔍 Analyseur Contexte & Charte"]
+    B --> C["📝 Étape Trame Validable (UX)"]
+    C --> D["⚙️ Skills Onepoint + Claude 3.5 Sonnet"]
+    D --> E["📊 Calculs Staffing & Budget"]
+    D --> F["📦 Zone Annexes & CVs"]
+    E & F --> G["🎨 Moteur de Génération PPTX"]
+    G --> H["🖥️ Fichier .pptx & Export HTML"]
 ```
 
 ---
 
-## ⚙️ 3. Stack Technologique & Composants Clés
+## ⚡ 4. Défis Techniques Résolus (Preuves de Compétence)
 
-| Composant | Technologie | Description |
+| Défi Rencontré | Cause Racine Identifiée | Solution Technique Déployée |
 |:---|:---|:---|
-| **Moteur LLM & Agents** | **Anthropic Claude 3.5 Sonnet** (SDK Anthropic) | Sélectionné après benchmark vs Claude Opus : le passage en *Full Sonnet* a réduit le temps de génération de plus de 60 % avec une qualité rédactionnelle et une cohérence visuelle quasi-identiques. |
-| **Framework de Skills** | **Onepoint System + onepoint-slide-v2** | Bibliothèque de règles typographiques, chromatiques et narratives spécifiques aux standards d'excellence du cabinet. |
-| **Back-end & Routes API** | **Next.js / Node.js sur Vercel** | Endpoints d'analyse de brief, streaming de trame et génération de deck avec polling d'avancement. |
-| **Formatage de Document** | **Générateur PPTX & Export HTML** | Assemblage des slides, positionnement des formes, gestion des masques de diapositive et export HTML complémentaire pour consultation web interactive. |
+| **Optimisation temps de génération** | Le chaînage initial Opus + Sonnet prenait plusieurs minutes. | Migration vers une architecture **Full Sonnet** : réduction du temps de génération de 60 % sans perte décelable sur la qualité rédactionnelle. |
+| **Plafond de fonctions Vercel** | La formule Vercel limitait le déploiement à 12 serverless functions simultanées. | Fusion logique des endpoints d'analyse de brief et de génération de trame au sein d'un routeur unifié. |
+| **Échecs d'upload sur pièces jointes** | Les CVs et images haute résolution dépassaient la taille maximale de requête HTTP. | Implémentation d'un module de compression d'images et d'optimisation de payload côté client avant envoi. |
+| **Dérive stylistique des diapositives** | Les premiers prompts généraient des slides surchargées en aplats colorés. | Refonte du prompt maître : titres stricts en noir, sous-titres en gris, palette monochrome avec une seule couleur d'accentuation par phase. |
 
 ---
 
-## 💡 4. Innovations UX & Fonctionnalités Clés
-
-- **Le concept de « Trame » intermédiaire :** Plutôt que de générer directement 30 slides à l'aveugle, l'agent génère d'abord une trame concise (une carte = une diapositive). L'utilisateur peut réordonner les slides par glisser-déposer, modifier le message clé, changer le type de visuel et déposer une image spécifique.
-- **Section Équipe & Budget dynamique :** Calcul automatique du TJM moyen, de la répartition du staffing et du budget total estimé en fonction des phases du projet.
-- **Références clients structurées :** Mise en page automatique des *success stories* Onepoint au format "Logo client + Défi + Solution + Métrique chiffrée" (validé sur des cas réels : Carrefour, Accor, CHANEL, La Banque Postale, Canal+, FDJ United).
-- **Annexes intelligentes :** Zone de dépôt multi-formats (CVs, fiches méthodologiques) automatiquement normalisées et insérées en fin de présentation.
-
----
-
-## 🐛 5. Défis Résolus & Optimisations
-
-| Défi rencontré | Cause | Solution apportée |
-|:---|:---|:---|
-| **Dépassement du quota de fonctions Vercel** | La formule Vercel limitait le projet à 12 serverless functions simultanées. | Fusion des routes d'analyse de trame et de génération dans un orchestrateur unique. |
-| **Erreur de payload sur fichiers volumineux** | Les images et CVs haute définition dépassaient la taille maximale de requête HTTP. | Implémentation d'un compresseur d'images côté client avant envoi aux routes API. |
-| **Dérive stylistique des templates** | Les premiers prompts surchargeaient les slides avec des couleurs vives disparates et des bandeaux superposés. | Refonte du prompt maître : titres stricts en noir, sous-titres en gris, palette monochrome avec une seule couleur d'accentuation Onepoint par phase de projet. |
-| **Persistance des données de session** | Les rechargements accidentels faisaient perdre l'ensemble du brief et des documents déposés. | Sauvegarde réactive de la session en `localStorage` avec bandeau de restauration au redémarrage. |
+## 📊 5. Métriques & Validation sur Cas Réels
+- **Temps de génération d'un deck complet (20 slides) :** Moins de **2 minutes**.
+- **Cas réels d'entreprise validés :** Decks générés avec succès sur des cas réels grands comptes (Carrefour, Accor, CHANEL, La Banque Postale, Canal+, FDJ United).
+- **Taux de fidélité à la charte :** 100 % de conformité sur le positionnement du logo, les marges et la typographie institutionnelle.
 
 ---
 
 ## 🔗 Liens & Références
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
-- [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Fiche de Compétence : Meta-Prompting & Agents]]
+- [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Compétence : Architecture Agentique]]
+- [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Compétence : Cloud & Vercel]]

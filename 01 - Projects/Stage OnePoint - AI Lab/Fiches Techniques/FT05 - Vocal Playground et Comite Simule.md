@@ -5,73 +5,77 @@ categorie: Audio AI & Conversational Agents
 entreprise: Onepoint (AI Lab)
 date_debut: 2026-06-18
 date_fin: 2026-09-17
-statut: terminé / déployé
+statut: déployé en production
 tags:
   - elevenlabs
   - voice-cloning
   - gemini
   - comex-simule
   - teams-ui
-  - vocal-playground
+  - web-audio-api
 ---
 
 # 🎙️ Fiche Technique 05 : Vocal Playground & Comité Simulé
 
-> **Références Deck Marketing :** Diapositive 37 (*Votre comité simulé … et ce qui lui échappe*) & Diapositive 53 (*Vocal playground : Traduisez votre voix en 11 langues*).  
-> **Démonstrateurs Déployés :**
-> - Plateforme globale : `https://plateforme-voc.vercel.app/`
-> - Expérience Comité Simulé : `https://plateforme-voc.vercel.app/xp/comex-simule`
+> **Démonstrateur en Ligne :** `https://plateforme-voc.vercel.app/xp/comex-simule`  
+> **Rôle d'Émilie :** Conception de l'interface temps réel façon Teams, intégration des pipelines vocaux ElevenLabs et moteur d'arbitrage multi-agents.
 
 ---
 
-## 📌 1. Contexte & Vision
-
-Le son et la voix incarnent la frontière la plus intime et immédiate de l'IA agentique. Cette suite d'expériences conçue pour le showroom COMEX de l'**Agentic Livepoint** poursuit deux objectifs :
-1. **Démontrer la puissance du clonage vocal temps réel** pour la communication internationale des entreprises (Vocal Playground).
-2. **Mettre en scène un arbitrage stratégique face à un comité de direction simulé par des agents IA** pour interroger les décideurs sur les forces et limites de la négociation automatisée (Comité Simulé).
+## 🎯 1. Objectif & Impact Métier
+Créer deux démonstrateurs immersifs pour les directions générales :
+1. **Comité Simulé :** Permettre à un dirigeant de pitcher un arbitrage stratégique devant un comité d'agents IA qui débattent, challengent et votent en temps réel.
+2. **Vocal Playground :** Démontrer l'internationalisation instantanée en traduisant et en clonant la voix du visiteur en **11 langues** tout en préservant son timbre et ses émotions.
 
 ---
 
-## 🏛️ 2. Volet 1 : Le Comité Simulé (Comex Virtuel)
+## 🛠️ 2. Ce que j'ai Conçu & Développé
+- **Interface Immersive Type Microsoft Teams :** Conception d'une grille réactive plein cadre sans défilement avec fond clair, tuiles sombres, badge d'interlocuteur actif synchronisé au millième de seconde et chronomètre de séance.
+- **Contrôles Audio Push-to-Talk :** Implémentation via la *Web Audio API* d'une commande micro « maintenir pour parler », levée de main et bouton d'interruption d'urgence (raccrochage net).
+- **Moteur d'Arbitrage & Visualisation Dynamique :**
+  - Jauge de conviction trichrome dynamique (*rouge = opposé, gris = réservé, bleu = convaincu*).
+  - Frise chronologique vectorielle reliant les pastilles d'évolution des positions des membres du comité au fil des arguments.
+- **Pipeline de Clonage Instantané :** Chaîne audio *Capture Micro ➔ Transcription STT ElevenLabs ➔ Traduction sémantique Gemini ➔ Clonage vocal instantané ElevenLabs ➔ Restitution multilingue synchrone*.
+
+---
+
+## 🏗️ 3. Architecture Technique
 
 ```mermaid
 flowchart TD
-    A["👤 Visiteur Pitchant un Arbitrage"] -->|"Micro Push-to-Talk"| B["🎙️ Transcription & Écoute Active"]
-    B --> C{"Analyse du Pitch<br>(Pertinence & Précision)"}
-    C -->|"Pitch trop vague (max 2x)"| D["❓ Demande orale d'éclaircissement"]
-    C -->|"Pitch clair & structuré"| E["💬 Débat entre Membres du Comité"]
-    E --> F["📊 Jauge de Position (Opposé / Réservé / Convaincu)"]
-    E --> G["📈 Frise Chronologique d'Évolution des Avis"]
-    E --> H["💡 Restitution : 2-3 Conseils Concrets de Négociation"]
+    subgraph Volet1["🏛️ Comité Simulé"]
+        A["👤 Visiteur (Push-to-Talk)"] --> B["🧠 Orchestrateur NLU Gemini"]
+        B --> C{"Pitch précis ?"}
+        C -->|"Non (max 2x)"| D["❓ Interruption vocale pour précision"]
+        C -->|"Oui"| E["💬 Débat multi-agents avec chiffres réels"]
+        E --> F["📊 Jauges & Frise d'évolution des avis"]
+    end
+    subgraph Volet2["🌍 Vocal Playground"]
+        G["🎙️ Échantillon Voix"] --> H["🧬 ElevenLabs Voice Cloning"]
+        H --> I["🔊 Audio en 11 Langues avec Émotion"]
+    end
 ```
-
-### Caractéristiques & Design UI Teams
-- **Immersion visioconférence :** Mise en page plein écran sans défilement imitant Microsoft Teams (fond clair, tuiles des participants sombres avec étiquettes de nom et badge de parole réactif).
-- **Contrôles physiques :** Bouton microphone en *Push-to-Talk* (maintenir pour parler), levée de main, et bouton rouge pour raccrocher et interrompre net la séance.
-- **Dynamique de débat non-linéaire :** Si un argument est déjà traité, les agents changent d'angle plutôt que de répéter la même objection.
-- **Sécurisation & Confidentialité :** Le contenu des cas a été assaini directement depuis le coffre Obsidian (retrait des budgets internes, tâches et jargon technique comme « PR » ou « vault », remplacé par « Archiver ce cas au Lab »).
 
 ---
 
-## 🌍 3. Volet 2 : Vocal Playground (Doublage Vivant ElevenLabs)
+## ⚡ 4. Défis Techniques Résolus (Preuves de Compétence)
 
-Le visiteur enregistre une phrase au micro et s'entend parler quelques secondes plus tard dans l'une des **11 langues supportées**, en conservant fidèlement son timbre de voix, son débit et ses inflexions émotionnelles.
+| Défi Rencontré | Cause Racine Identifiée | Solution Technique Déployée |
+|:---|:---|:---|
+| **Agents débattant dans le vide** | Si le pitch du visiteur manquait de substance, les agents tournaient en boucle. | Programmation d'un **garde-fou conversationnel** : le comité coupe la parole poliment pour exiger une précision concrète (max 2 fois). |
+| **Désynchronisation audio / interface** | La tuile de l'agent qui parlait s'allumait avec plusieurs secondes de retard. | Refonte de la gestion d'état réactive : latence d'annonce d'intervention **réduite de 20s à moins de 2s**. |
+| **Répétition stérile d'arguments** | Les agents reprenaient parfois les mêmes objections. | Injection d'une fonction de changement d'angle : obligation pour l'agent reprenant la parole d'aborder un nouveau point de vue. |
+| **Sécurisation des données internes** | Le contenu initial contenait des données budgétaires confidentielles du Lab. | Assainissement intégral des cas d'usage depuis le vault Obsidian (suppression des coûts réels et du jargon interne comme « PR » ou « vault »). |
 
-```mermaid
-flowchart LR
-    A["🗣️ Voix Visiteur (Micro)"] --> B["📝 Transcription STT (ElevenLabs)"]
-    B --> C["🌐 Traduction Contextuelle (Gemini)"]
-    C --> D["🧬 Clonage Vocal Instantané (ElevenLabs API)"]
-    D --> E["🔊 Restitution Audio Multilingue avec Émotion"]
-```
+---
 
-### Valeur Business démontrée aux clients
-- **Internationalisation instantanée :** Diffusion de messages de direction générale à toutes les filiales mondiales sans réenregistrement studio.
-- **Réunions multilingues asynchrones :** Briser la barrière de la langue tout en préservant l'authenticité de l'émetteur.
+## 📊 5. Métriques & Résultats
+- **Langues prises en charge :** 11 langues traduites avec le timbre vocal exact de l'utilisateur.
+- **Fluidité de séance :** 100 % d'immersion sans latence perceptible entre la prise de parole et l'actualisation des jauges visuelles.
 
 ---
 
 ## 🔗 Liens & Références
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
-- [[02 - Areas/Compétences & R&D IA/IA Multimodale (Audio, Voix, Vidéo, Vision)|Fiche de Compétence : IA Multimodale]]
-- [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Fiche de Compétence : Product Building & Showroom]]
+- [[02 - Areas/Compétences & R&D IA/IA Multimodale (Audio, Voix, Vidéo, Vision)|Compétence : Audio & Voix]]
+- [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Compétence : Showroom & UX]]

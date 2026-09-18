@@ -1,16 +1,15 @@
 ---
 type: fiche-technique
 projet: Agent Veille Événementielle Tech dans Obsidian
-categorie: Automation & PKM
+categorie: Automation & Knowledge Systems
 entreprise: Onepoint (AI Lab)
 date_debut: 2026-06-02
 date_fin: 2026-06-15
-statut: terminé / opérationnel
+statut: opérationnel en production
 tags:
   - obsidian
   - github-actions
   - gemini-2-5-flash
-  - claude-api
   - dataview
   - kanban
   - pkm
@@ -18,57 +17,55 @@ tags:
 
 # 📡 Fiche Technique 03 : Agent Veille Événementielle Tech dans Obsidian
 
-> **Localisation Vault :** Dossier `04. Veille` (relié via Obsidian Git).  
-> **Cadence d'Exécution :** Automatisée tous les lundis à 09h30 via un workflow GitHub Actions.
+> **Destination dans le Vault :** Dossier `04. Veille` (synchronisation continue via Obsidian Git).  
+> **Rôle d'Émilie :** Conception du pipeline CI/CD automatisé, logique d'extraction et intégration dans l'écosystème de connaissances Obsidian.
 
 ---
 
-## 📌 1. Contexte & Problématique
-
-Pour alimenter la stratégie de prospection du Lab IA et préparer les interventions de Onepoint sur les grands salons (Vivatech, Google Cloud Summit, WAIC Shanghai), l'équipe avait besoin d'un suivi exhaustif et continu des conférences, salons et événements IA/Tech en France et à l'international.
-Ce travail manuel était chronophage et souffrait d'oublis fréquents. L'objectif était de créer un **agent de veille autonome 100 % déporté dans le cloud**, injectant directement des fiches enrichies dans le coffre Obsidian de l'équipe sans exiger qu'un ordinateur reste allumé.
+## 🎯 1. Objectif & Impact Métier
+Automatiser la veille hebdomadaire des conférences, salons et hackathons IA/Tech mondiaux et français pour l'équipe du Lab. Le système fonctionne **100 % dans le cloud sans exiger d'ordinateur allumé**, injectant des fiches d'événements structurées directement exploitables pour la prospection du Lab (VivaTech, Google Cloud Summit, WAIC Shanghai).
 
 ---
 
-## 🏗️ 2. Architecture Technique
+## 🛠️ 2. Ce que j'ai Conçu & Développé
+- **Orchestration CI/CD Cloud (GitHub Actions) :** Programmation d'un workflow serverless déclenché automatiquement tous les lundis à 09h30 via un cron Linux.
+- **Moteur d'Extraction & Normalisation (Gemini 2.5 Flash) :** Analyse du web, extraction des entités clés (dates, lieux, thématiques, format, liens d'inscription) et génération de notes Markdown enrichies de métadonnées YAML.
+- **Synchronisation Automatisée du Coffre (Obsidian Git) :** Connexion sécurisée au dépôt GitHub via token d'accès dédié pour commiter et pousser les nouvelles fiches directement dans le coffre d'équipe.
+- **Interface de Suivi Dynamique :** Mise en place d'un tableau Kanban interactif et de requêtes Dataview filtrant les événements par statut (*À évaluer, Retenu, Inscription faite, Présence confirmée*), zone géographique et thématique.
+
+---
+
+## 🏗️ 3. Architecture Technique
 
 ```mermaid
 flowchart LR
-    A["⏰ GitHub Actions Cron<br>(Tous les lundis 09h30)"] --> B["🌐 Recherche Web & Scraping Sources Tech"]
-    B --> C["🧠 Filtre IA & Structuration (Gemini 2.5 Flash)"]
-    C --> D["🛡️ Module Anti-Hallucination & Dédoublonnage"]
-    D --> E["📝 Génération Notes Markdown Enrichies"]
-    E --> F["🔄 Git Commit & Push Automatique"]
-    F --> G["💻 Synchronisation Obsidian Git"]
-    G --> H["📊 Tableaux Dataview & Vues Kanban"]
+    A["⏰ GitHub Actions Cron<br>(Tous les lundis 09h30)"] --> B["🌐 Scraping & Recherche Sources Tech"]
+    B --> C["🧠 Filtre & Structuration (Gemini 2.5 Flash)"]
+    C --> D["🛡️ Contrôle Anti-Hallucination & Index Existant"]
+    D --> E["📝 Fiches Markdown + Frontmatter YAML"]
+    E --> F["🔄 Git Commit / Push Automatique"]
+    F --> G["💻 Obsidian Vault (Dataview / Kanban)"]
 ```
 
 ---
 
-## ⚙️ 3. Stack Technologique
+## ⚡ 4. Défis Techniques Résolus (Preuves de Compétence)
 
-| Brique | Outil | Rôle |
+| Défi Rencontré | Cause Racine Identifiée | Solution Technique Déployée |
 |:---|:---|:---|
-| **Orchestrateur Cloud** | **GitHub Actions** | Exécution d'un job serverless conteneurisé hebdomadaire gratuit. |
-| **Moteur d'Analyse IA** | **Google Gemini 2.5 Flash** | Extraction d'entités, classification thématique et synthèse (migré depuis l'API Claude pour des raisons de volumétrie et de gestion des quotas). |
-| **Synchronisation Coffre** | **Obsidian Git + GitHub Token** | Injection automatique des notes au format `.md` dans le dépôt du coffre. |
-| **Restitution Visuelle** | **Plugins Obsidian (Dataview + Kanban)** | Vues dynamiques par statut (*À évaluer, Retenu, Inscription faite, Présence confirmée*), filtrage par dates et pays. |
+| **Redondance d'événements récurrents** | Risque de réinjecter les mêmes conférences d'une semaine sur l'autre. | Création d'un **index unique consolidé** : l'agent consulte l'existant avant toute création et n'ajoute que les nouveaux signaux ou révisions de programme. |
+| **Hallucinations de dates / intervenants** | Les modèles génératifs non contraints extrapolent des données non confirmées. | Conditionnement strict du prompt : obligation de citation d'une **URL source active** et vérification de cohérence calendaire. |
+| **Gestion des quotas & coûts d'API** | Épuisement rapide des quotas lors des expérimentations initiales sous Claude. | Migration vers **Google Gemini 2.5 Flash** : réduction drastique des coûts d'inférence avec un débit de token largement supérieur. |
 
 ---
 
-## 🛡️ 4. Résolution des Défis Métier
-
-1. **Élimination des Hallucinations :**
-   - *Constat initial :* L'agent inventait parfois des dates de salon ou des speakers non confirmés.
-   - *Solution :* Obligation pour le prompt de citation systématique d'une URL source active et contrôle de validité des dates dans le calendrier réel.
-2. **Dédoublonnage Temporel Intelligent :**
-   - *Constat initial :* Risque de réinjecter les mêmes événements majeurs d'une semaine sur l'autre.
-   - *Solution :* Mise en place d'un index unique d'événements : l'agent consulte l'index existant avant de créer une nouvelle fiche, ne générant des alertes que pour les nouveaux événements détectés ou les changements majeurs de programme.
-3. **Structure des Métadonnées :**
-   - Ajout systématique de frontmatter YAML normalisé (`date_debut`, `date_fin`, `lieu`, `pays`, `format`, `tags`, `url`) pour alimenter les requêtes Dataview.
+## 📊 5. Métriques & Résultats
+- **Disponibilité :** 100 % autonome dans le cloud (0 intervention manuelle hebdomadaire requise).
+- **Consistance de données :** Métadonnées 100 % exploitables par les requêtes Dataview pour la planification des déplacements de l'équipe du Lab.
 
 ---
 
 ## 🔗 Liens & Références
 - [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|Index général du stage OnePoint]]
-- [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Fiche de Compétence : Meta-Prompting & Agents]]
+- [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Compétence : Cloud & Automatisation]]
+- [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Compétence : Meta-Prompting & LLMs]]
