@@ -8,11 +8,12 @@ Ce coffre numérique repose sur la méthode **P.A.R.A.** (*Projects, Areas, Reso
 
 ## 🧭 Navigation Rapide
 
-- [**🏠 Dashboard Principal**](Dashboard.md) — Tableau de bord interactif central.
-- [**🗺️ MOC — Carte des Connaissances & Atlas du Graphe**](03%20-%20Resources/MOC%20-%20Carte%20des%20Connaissances%20&%20Graphe.md) — Vue d'ensemble des 6 constellations relationnelles.
-- [**🏢 Stage OnePoint AI Lab (M2)**](01%20-%20Projects/Stage%20OnePoint%20-%20AI%20Lab/Index%20du%20Stage.md) — 10 fiches techniques, Agentic Livepoint & suite Ellis.
-- [**🧪 Stage Recherche Zhejiang University (A4)**](01%20-%20Projects/Stage%20Recherche%20-%20Zhejiang%20University/Index%20du%20Stage%20Recherche%20ZJU.md) — DimeNet++, Transformers, QM9 & cluster SLURM.
-- [**👤 Profil & Parcours Ingénieure**](02%20-%20Areas/Profil%20&%20Carrière/Profil%20&%20Parcours%20—%20Émilie%20Jiang.md) — Compétences, diplômes et projets phares.
+- [[Dashboard|🏠 Dashboard Principal]] — Tableau de bord interactif central.
+- [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ MOC — Carte des Connaissances & Atlas du Graphe]] — Vue d'ensemble des 6 constellations relationnelles.
+- [[01 - Projects/Stage OnePoint - AI Lab/Index du Stage|🏢 Stage OnePoint AI Lab (M2)]] — 10 fiches techniques, Agentic Livepoint & suite Ellis.
+- [[01 - Projects/Stage Recherche - Zhejiang University/Index du Stage Recherche ZJU|🧪 Stage Recherche Zhejiang University (A4)]] — DimeNet++, Transformers, QM9 & cluster SLURM.
+- [[02 - Areas/Profil & Carrière/Profil & Parcours — Émilie Jiang|👤 Profil & Parcours Ingénieure]] — Compétences, diplômes et projets phares.
+- [[00 - Inbox/Bienvenue dans ton Second Brain|📥 Boîte de Capture (Inbox)]] — Point d'entrée des notes rapides.
 
 ---
 

@@ -5,18 +5,75 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": true,
-  "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"01 - Projects/Stage OnePoint - AI Lab/Fiches Techniques\"",
+      "color": {
+        "a": 1,
+        "rgb": 3718648
+      }
+    },
+    {
+      "query": "path:\"01 - Projects/Stage Recherche - Zhejiang University/Fiches Techniques\"",
+      "color": {
+        "a": 1,
+        "rgb": 11032055
+      }
+    },
+    {
+      "query": "path:\"01 - Projects\"",
+      "color": {
+        "a": 1,
+        "rgb": 16733040
+      }
+    },
+    {
+      "query": "path:\"02 - Areas/Compétences & R&D IA\"",
+      "color": {
+        "a": 1,
+        "rgb": 1096065
+      }
+    },
+    {
+      "query": "path:\"02 - Areas/Profil & Carrière\"",
+      "color": {
+        "a": 1,
+        "rgb": 16096779
+      }
+    },
+    {
+      "query": "path:\"03 - Resources\"",
+      "color": {
+        "a": 1,
+        "rgb": 440020
+      }
+    },
+    {
+      "query": "path:\"_Templates\"",
+      "color": {
+        "a": 1,
+        "rgb": 6583435
+      }
+    },
+    {
+      "query": "path:\"00 - Inbox\"",
+      "color": {
+        "a": 1,
+        "rgb": 16020150
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0.4,
+  "nodeSizeMultiplier": 1.15,
+  "lineSizeMultiplier": 1.25,
+  "collapse-forces": false,
+  "centerStrength": 0.45,
+  "repelStrength": 14.5,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.7397563996378516,
+  "linkDistance": 220,
+  "scale": 0.8,
   "close": false
 }

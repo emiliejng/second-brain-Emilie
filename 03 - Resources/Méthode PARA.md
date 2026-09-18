@@ -41,3 +41,11 @@ Lorsque tu ajoutes une note, pose-toi ces questions dans l'ordre :
 2. *Est-ce un domaine de ma vie que je dois entretenir ?* ➡️ **Areas**
 3. *Est-ce une thématique ou une référence générale ?* ➡️ **Resources**
 4. *Est-ce terminé ou obsolète ?* ➡️ **Archives**
+
+---
+
+## 🔗 Liens Internes
+- [[Dashboard|🏠 Dashboard Principal]]
+- [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ MOC — Carte des Connaissances & Graphe]]
+- [[01 - Projects/Configuration du Second Brain|🎯 Projet : Configuration du Second Brain]]
+- [[02 - Areas/Développement Personnel & Compétences|🌱 Domaine : Compétences & Standards]]

@@ -43,6 +43,11 @@ tags:
 
 ---
 
+## 🎯 Projets Liés
+- [[01 - Projects/Configuration du Second Brain|Configuration du Second Brain (Terminé)]]
+
+---
+
 ## 🔗 Liens Fondations
 - [[Dashboard|🏠 Dashboard Principal]]
 - [[03 - Resources/MOC - Carte des Connaissances & Graphe|🗺️ MOC — Carte des Connaissances & Graphe]]
