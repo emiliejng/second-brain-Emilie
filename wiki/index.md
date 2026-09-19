@@ -22,11 +22,11 @@ tags:
 
 | Identifiant | Document Source | Résumé en Une Ligne | Statut |
 |:---|:---|:---|:---:|
-| [[wiki/sources/SRC-001 - Notes de Stage M2 OnePoint\|SRC-001]] | `Contenu stage M2.docx` | Journal de bord technique et spécifications d'implémentation du stage Onepoint AI Lab (Ellis, Remotion, Rokid, Reachy). | ✅ Intégré |
-| [[wiki/sources/SRC-002 - Deck Marketing Agentic Livepoint\|SRC-002]] | `Deck marketing livepoint V2.pptx` | Présentation stratégique de l'Agentic Livepoint, parcours client en 4 phases, 20 démonstrateurs et concept Frontier Firm. | ✅ Intégré |
-| [[wiki/sources/SRC-003 - CV Emilie Jiang EN\|SRC-003]] | `EMILIE_JIANG_CV_EN_v2.docx` | Curriculum vitae certifié en anglais : diplômes ESILV/IFT/CUPGE, expériences professionnelles, publications et stack. | ✅ Intégré |
-| [[wiki/sources/SRC-004 - Rapport et Soutenance Stage Recherche ZJU\|SRC-004]] | `rapport stage A4.pages` & `Défense 2025.pdf` | Rapport de recherche et soutenance sur le modèle hybride DimeNet++ Transformer, MAP et benchmark QM9 au LIULAB (ZJU). | ✅ Intégré |
-| [[wiki/sources/SRC-005 - Pattern LLM Wiki Andrej Karpathy\|SRC-005]] | `LLM Wiki Idea File - Andrej Karpathy.md` | Spécification fondatrice d'Andrej Karpathy sur les bases de connaissances vivantes et cumulatives gérées par agents LLM. | ✅ Intégré |
+| [[wiki/sources/SRC-001 - Notes de Stage M2 OnePoint|SRC-001]] | `Contenu stage M2.docx` | Journal de bord technique et spécifications d'implémentation du stage Onepoint AI Lab (Ellis, Remotion, Rokid, Reachy). | ✅ Intégré |
+| [[wiki/sources/SRC-002 - Deck Marketing Agentic Livepoint|SRC-002]] | `Deck marketing livepoint V2.pptx` | Présentation stratégique de l'Agentic Livepoint, parcours client en 4 phases, 20 démonstrateurs et concept Frontier Firm. | ✅ Intégré |
+| [[wiki/sources/SRC-003 - CV Emilie Jiang EN|SRC-003]] | `EMILIE_JIANG_CV_EN_v2.docx` | Curriculum vitae certifié en anglais : diplômes ESILV/IFT/CUPGE, expériences professionnelles, publications et stack. | ✅ Intégré |
+| [[wiki/sources/SRC-004 - Rapport et Soutenance Stage Recherche ZJU|SRC-004]] | `rapport stage A4.pages` & `Défense 2025.pdf` | Rapport de recherche et soutenance sur le modèle hybride DimeNet++ Transformer, MAP et benchmark QM9 au LIULAB (ZJU). | ✅ Intégré |
+| [[wiki/sources/SRC-005 - Pattern LLM Wiki Andrej Karpathy|SRC-005]] | `LLM Wiki Idea File - Andrej Karpathy.md` | Spécification fondatrice d'Andrej Karpathy sur les bases de connaissances vivantes et cumulatives gérées par agents LLM. | ✅ Intégré |
 
 ---
 
@@ -34,16 +34,16 @@ tags:
 
 | Note Conceptuelle | Résumé Fondamental en Une Ligne |
 |:---|:---|
-| [[wiki/concepts/Pattern LLM Wiki (Andrej Karpathy)\|Pattern LLM Wiki (Andrej Karpathy)]] | Architecture en 3 couches (`raw/`, `wiki/`, `CLAUDE.md`) remplaçant le RAG par une base de code de connaissances cumulative. |
-| [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting\|Architecture Agentique & Meta-Prompting]] | Conception de systèmes multi-agents autonomes, décomposition de tâches, prompts maîtres et garde-fous stricts. |
-| [[02 - Areas/Compétences & R&D IA/Graph Neural Networks & Chimie Computationnelle (DimeNet++, Transformer, QM9)\|Graph Neural Networks & Chimie Computationnelle]] | Deep Learning géométrique 3D, bases radiales de Bessel, harmoniques sphériques et auto-attention globale sur molécules. |
-| [[02 - Areas/Compétences & R&D IA/Calcul Haute Performance & Distributed Deep Learning (SLURM, Multi-GPU)\|Calcul Haute Performance & Deep Learning (SLURM)]] | Scaling multi-GPU sous Linux HPC, ordonnancement SLURM, gradient checkpointing et gestion de VRAM. |
-| [[02 - Areas/Compétences & R&D IA/IA Multimodale (Audio, Voix, Vidéo, Vision)\|IA Multimodale (Audio, Voix, Vidéo, Vision)]] | Orchestration de flux croisés vision par ordinateur, modèles de diffusion, synthèse vocale et interfaces immersives. |
-| [[02 - Areas/Compétences & R&D IA/Video-as-Code & Motion Design (Remotion & Lambda)\|Video-as-Code & Motion Design (Remotion & Lambda)]] | Moteur de rendu programmatique de vidéos en React/TypeScript distribué sur fonctions AWS Lambda sans serveur. |
-| [[02 - Areas/Compétences & R&D IA/Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)\|Robotique Incarnée & Informatique Ambiante]] | Embodied AI : simulation physique sous MuJoCo, robotique Reachy Mini et affichage tête haute AR sur lunettes Rokid. |
-| [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel\|Product Building IA & Showroom Expérientiel]] | Design et déploiement de démonstrateurs interactifs d'accueil sur kiosques Samsung Flip (55-85") pour comités exécutifs. |
-| [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)\|Cloud Serverless & Sécurité des Systèmes IA]] | Architecture cloud serverless (AWS Lambda, S3, IAM, Vercel) et sécurisation intégrale des clés d'API sans fuite frontend. |
-| [[03 - Resources/Vision Frontier Firm & Organisation Agentique\|Vision : La « Frontier Firm » & l'Économie Agentique]] | Modèle de transition organisationnelle des entreprises vers des réseaux de valeur agentiques à productivité démultipliée. |
+| [[wiki/concepts/Pattern LLM Wiki (Andrej Karpathy)|Pattern LLM Wiki (Andrej Karpathy)]] | Architecture en 3 couches (`raw/`, `wiki/`, `CLAUDE.md`) remplaçant le RAG par une base de code de connaissances cumulative. |
+| [[02 - Areas/Compétences & R&D IA/Architecture Agentique & Meta-Prompting|Architecture Agentique & Meta-Prompting]] | Conception de systèmes multi-agents autonomes, décomposition de tâches, prompts maîtres et garde-fous stricts. |
+| [[02 - Areas/Compétences & R&D IA/Graph Neural Networks & Chimie Computationnelle (DimeNet++, Transformer, QM9)|Graph Neural Networks & Chimie Computationnelle]] | Deep Learning géométrique 3D, bases radiales de Bessel, harmoniques sphériques et auto-attention globale sur molécules. |
+| [[02 - Areas/Compétences & R&D IA/Calcul Haute Performance & Distributed Deep Learning (SLURM, Multi-GPU)|Calcul Haute Performance & Deep Learning (SLURM)]] | Scaling multi-GPU sous Linux HPC, ordonnancement SLURM, gradient checkpointing et gestion de VRAM. |
+| [[02 - Areas/Compétences & R&D IA/IA Multimodale (Audio, Voix, Vidéo, Vision)|IA Multimodale (Audio, Voix, Vidéo, Vision)]] | Orchestration de flux croisés vision par ordinateur, modèles de diffusion, synthèse vocale et interfaces immersives. |
+| [[02 - Areas/Compétences & R&D IA/Video-as-Code & Motion Design (Remotion & Lambda)|Video-as-Code & Motion Design (Remotion & Lambda)]] | Moteur de rendu programmatique de vidéos en React/TypeScript distribué sur fonctions AWS Lambda sans serveur. |
+| [[02 - Areas/Compétences & R&D IA/Robotique Incarnée & Informatique Ambiante (Reachy, Rokid, MuJoCo)|Robotique Incarnée & Informatique Ambiante]] | Embodied AI : simulation physique sous MuJoCo, robotique Reachy Mini et affichage tête haute AR sur lunettes Rokid. |
+| [[02 - Areas/Compétences & R&D IA/Product Building IA & Showroom Expérientiel|Product Building IA & Showroom Expérientiel]] | Design et déploiement de démonstrateurs interactifs d'accueil sur kiosques Samsung Flip (55-85") pour comités exécutifs. |
+| [[02 - Areas/Compétences & R&D IA/Cloud Serverless & Sécurité des Systèmes IA (AWS, Vercel)|Cloud Serverless & Sécurité des Systèmes IA]] | Architecture cloud serverless (AWS Lambda, S3, IAM, Vercel) et sécurisation intégrale des clés d'API sans fuite frontend. |
+| [[03 - Resources/Vision Frontier Firm & Organisation Agentique|Vision : La « Frontier Firm » & l'Économie Agentique]] | Modèle de transition organisationnelle des entreprises vers des réseaux de valeur agentiques à productivité démultipliée. |
 
 ---
 
@@ -51,11 +51,11 @@ tags:
 
 | Entité / Système | Rôle & Nature |
 |:---|:---|
-| [[wiki/entities/Zhejiang University (LIULAB)\|Zhejiang University (LIULAB)]] | Laboratoire mondial d'IA & Chimie computationnelle (séparation d'isotopes pour ITER, cages poreuses). |
-| [[wiki/entities/OnePoint (AI Lab)\|Onepoint (AI Lab)]] | Cellule d'innovation IA, conception de la plateforme Ellis et animation de l'Agentic Livepoint. |
-| [[wiki/entities/Ellis (Plateforme Agentique)\|Ellis (Plateforme Agentique)]] | Suite logicielle de vente agentique en production (`ellis-tau.vercel.app`) : ScriptWriter vidéo et PPTX builder. |
-| [[wiki/entities/Reachy Mini (Pollen Robotics)\|Reachy Mini (Pollen Robotics)]] | Robot expressif incarné simulé sous MuJoCo et déployé comme agent modérateur de réunions. |
-| [[wiki/entities/Rokid Glasses (AR Wearable)\|Lunettes AR Rokid Glasses]] | Wearable tête haute Micro-OLED programmé sous Android pour afficher en temps réel (<80ms) le flux de pensée de l'IA. |
+| [[wiki/entities/Zhejiang University (LIULAB)|Zhejiang University (LIULAB)]] | Laboratoire mondial d'IA & Chimie computationnelle (séparation d'isotopes pour ITER, cages poreuses). |
+| [[wiki/entities/OnePoint (AI Lab)|Onepoint (AI Lab)]] | Cellule d'innovation IA, conception de la plateforme Ellis et animation de l'Agentic Livepoint. |
+| [[wiki/entities/Ellis (Plateforme Agentique)|Ellis (Plateforme Agentique)]] | Suite logicielle de vente agentique en production (`ellis-tau.vercel.app`) : ScriptWriter vidéo et PPTX builder. |
+| [[wiki/entities/Reachy Mini (Pollen Robotics)|Reachy Mini (Pollen Robotics)]] | Robot expressif incarné simulé sous MuJoCo et déployé comme agent modérateur de réunions. |
+| [[wiki/entities/Rokid Glasses (AR Wearable)|Lunettes AR Rokid Glasses]] | Wearable tête haute Micro-OLED programmé sous Android pour afficher en temps réel (<80ms) le flux de pensée de l'IA. |
 
 ---
 
@@ -91,11 +91,11 @@ tags:
 
 | Note de Profil | Contenu Clé |
 |:---|:---|
-| [[02 - Areas/Profil & Carrière/Profil & Parcours — Émilie Jiang\|Profil & Parcours — Émilie Jiang]] | Fiche biographique, positionnement AI Product Builder, portfolio et vision d'ingénierie. |
-| [[02 - Areas/Profil & Carrière/Formation & Diplômes\|Formation & Diplômes]] | Diplôme d'Ingénieur ESILV (Creative Technology), MSc IFT, CUPGE Math-Physique Paris Cité. |
-| [[02 - Areas/Profil & Carrière/Expériences Professionnelles\|Expériences Professionnelles]] | Parcours complet : OnePoint AI Lab, LIULAB Zhejiang University, Caribe Wave, Pitié-Salpêtrière. |
-| [[02 - Areas/Profil & Carrière/Cartographie des Compétences & Stack\|Cartographie Complète des Compétences & Stack]] | Matrice détaillée par pôle : LLMs/Agents, Deep Learning, Video-as-Code, HPC, Web, CAO 3D. |
-| [[02 - Areas/Développement Personnel & Compétences\|Hub des Domaines de Responsabilité]] | Pôle de gouvernance et standards d'excellence pour la méthode P.A.R.A. |
+| [[02 - Areas/Profil & Carrière/Profil & Parcours — Émilie Jiang|Profil & Parcours — Émilie Jiang]] | Fiche biographique, positionnement AI Product Builder, portfolio et vision d'ingénierie. |
+| [[02 - Areas/Profil & Carrière/Formation & Diplômes|Formation & Diplômes]] | Diplôme d'Ingénieur ESILV (Creative Technology), MSc IFT, CUPGE Math-Physique Paris Cité. |
+| [[02 - Areas/Profil & Carrière/Expériences Professionnelles|Expériences Professionnelles]] | Parcours complet : OnePoint AI Lab, LIULAB Zhejiang University, Caribe Wave, Pitié-Salpêtrière. |
+| [[02 - Areas/Profil & Carrière/Cartographie des Compétences & Stack|Cartographie Complète des Compétences & Stack]] | Matrice détaillée par pôle : LLMs/Agents, Deep Learning, Video-as-Code, HPC, Web, CAO 3D. |
+| [[02 - Areas/Développement Personnel & Compétences|Hub des Domaines de Responsabilité]] | Pôle de gouvernance et standards d'excellence pour la méthode P.A.R.A. |
 
 ---
 
